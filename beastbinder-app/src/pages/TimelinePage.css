@@ -1,0 +1,60 @@
+/* Timeline Container - Now Invisible */
+.timeline-container {
+    width: 1182px;
+    height: 841px;
+    background-color: transparent; /* Makes the container invisible */
+    border-radius: 11px;
+    position: absolute;
+    top: calc(92px + 43px + 78px + 19px); /* Positioned 19px below the breadcrumbs box */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the container */
+}
+
+/* Timeline Chart Box - Inside Timeline Container */
+.timeline-chart-box {
+    width: 648px;
+    height: 841px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    border-radius: 11px;
+    position: absolute;
+    top: 0; /* Aligns with the top of .timeline-container */
+    left: 0; /* Touching the left side of .timeline-container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Placeholder Text Styling */
+.graph-placeholder-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+/* Encounter CR Graph Box - Inside Timeline Container */
+.encounter-cr-chart-box {
+    width: 515px;
+    height: 406px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    border-radius: 11px;
+    position: absolute;
+    top: 0; /* Aligns with the top of .timeline-container */
+    right: 0; /* Touching the right side of .timeline-container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Encounter Stat Graph Box - Inside Timeline Container */
+.encounter-stat-chart-box {
+    width: 515px;
+    height: 417px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    border-radius: 11px;
+    position: absolute;
+    bottom: 0; /* Aligns with the bottom of .timeline-container */
+    right: 0; /* Touching the right side of .timeline-container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
