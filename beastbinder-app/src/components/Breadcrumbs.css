@@ -1,0 +1,43 @@
+/* Breadcrumbs Container - Same as Hero Title Box */
+.breadcrumbs-container {
+    height: 78px;
+    width: calc(100% - 144px); /* Ensures 72px margin from both screen edges */
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(92px + 43px); /* Navbar height (92px) + 43px gap */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the box horizontally */
+    gap: 10px; /* Space between elements */
+  }
+  
+  /* Breadcrumb Text Styling */
+  .breadcrumb-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* Bright and Dimmed States */
+  .bright {
+    color: rgba(255, 255, 255, 1); /* Fully visible */
+  }
+  
+  .dimmed {
+    color: rgba(255, 255, 255, 0.39); /* Dimmed */
+  }
+  
+/* Chevron Icon */
+.breadcrumb-chevron {
+    width: 48px; /* Updated size */
+    height: 48px; /* Ensures it stays proportional */
+  }
+  
+  

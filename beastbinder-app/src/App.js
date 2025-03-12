@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
-// Other imports...
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import TimelinePage from "./pages/TimelinePage"; // Import the new page
+import Navbar from "./components/Navbar"; // Ensure Navbar is included
 
 function App() {
   return (
@@ -10,10 +10,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* Add other routes here... */}
+        <Route path="/timeline" element={<TimelinePage />} /> {/* New Route */}
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
