@@ -1,4 +1,5 @@
 import React from "react";
+import SearchMonstersButton from "../components/SearchMonstersButton";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -37,15 +38,18 @@ const LandingPage = () => {
 
       <div className="third-content-box">
   <div className="encounter-cr-graph-box">
-    {/* Placeholder for Encounter CR Graph */}
     <p className="graph-placeholder-text">Encounter CR Graph Placeholder</p>
   </div>
 
   <div className="timeline-graph-box">
-    {/* Placeholder for Timeline Graph */}
     <p className="graph-placeholder-text">Timeline Graph Placeholder</p>
   </div>
+
+  <div className="search-button-container">
+    <SearchMonstersButton />
+  </div>
 </div>
+
     </div>
     
 

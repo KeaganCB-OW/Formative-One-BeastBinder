@@ -1,0 +1,25 @@
+/* Search Monsters Button */
+.search-monsters-button {
+    width: 427px;
+    height: 61px;
+    background-color: rgba(177, 93, 93, 1); /* Button background */
+    border-radius: 11px;
+    border: none;
+    color: rgba(255, 255, 255, 1); /* Text color */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center; /* Centers text horizontally */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+.search-monsters-button:hover {
+    background-color: rgba(150, 80, 80, 1); /* Darker shade for hover effect */
+}

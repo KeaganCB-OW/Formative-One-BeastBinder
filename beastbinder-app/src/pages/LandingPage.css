@@ -181,6 +181,14 @@ body {
     text-align: center;
     line-height: 371px; /* Vertically centers text inside the box */
 }
+/* Search Button Container - Positioned in Third Content Box */
+.search-button-container {
+  position: absolute;
+  right: 54px; /* Right edge is 54px from the right of third-content-box */
+  top: 167px;
+
+}
+
 
 
 
