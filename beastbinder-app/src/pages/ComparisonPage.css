@@ -1,0 +1,45 @@
+/* Title Placement Container - Temporary */
+.comparison-title-container {
+    width: 1318px;
+    height: 52px;
+    background-color: rgba(255, 0, 0, 0.2); /* Placeholder color for development */
+    border-radius: 11px;
+    position: absolute;
+    top: calc(92px + 43px + 78px + 19px); /* Positioned 19px below the breadcrumbs */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the container */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+}
+
+/* Title Text Styling */
+.comparison-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+}
+/* Monsters Title - Positioned 207px from Left Edge */
+.monsters-title {
+    left: 207px;
+}
+
+/* Details Title - Positioned so its Right Edge is 361px from Right Edge */
+.details-title {
+    right: 361px;
+}
+
+/* Content Placement Container - Temporary */
+.comparison-content-container {
+    width: 1318px;
+    height: 791px;
+    background-color: rgba(0, 0, 255, 0.2); /* Different placeholder color for clarity */
+    border-radius: 11px;
+    position: absolute;
+    top: calc(92px + 43px + 78px + 19px + 52px); /* Positioned directly below the title container */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the container */
+}

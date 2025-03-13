@@ -1,0 +1,153 @@
+/* Outer Search Box */
+.search-box-outer {
+    width: 515px;
+    height: 61px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Magnifying Glass Icon */
+.search-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 26px; /* Moved 15px further left */
+}
+
+/* Inner Search Box */
+.search-box-inner {
+    width: 399px;
+    height: 42px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Search Input */
+.search-input {
+    width: calc(100% - 28px); /* 14px padding on both sides */
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: white;
+    padding-left: 14px;
+    padding-right: 14px;
+    outline: none;
+}
+
+/* Search Results Container (Always Visible) */
+.search-results-container {
+    width: 515px;
+    height: 712px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    top: 74px; /* 13px below search bar */
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Search Results Scrollable List */
+.search-results {
+    width: 100%;
+    max-height: calc(712px - 70px); /* Subtracts button space */
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+/* Monster Entry */
+.monster-entry {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 45px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Highlighted Monster Entry */
+.monster-entry.selected {
+    background: rgba(177, 93, 93, 0.57);
+    border-radius: 11px;
+}
+
+/* Monster Name */
+.monster-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 40px;
+}
+
+/* CR Label */
+.cr-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    position: absolute;
+    right: 100px;
+}
+
+/* CR Box */
+.cr-box {
+    width: 70px;
+    height: 43px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 13px;
+}
+
+/* Empty Message */
+.empty-message {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Compare Button */
+.compare-button {
+    width: 427px;
+    height: 61px;
+    background: rgba(177, 93, 93, 1);
+    border-radius: 11px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 51px;
+    cursor: pointer;
+}
