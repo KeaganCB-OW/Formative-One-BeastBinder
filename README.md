@@ -1,74 +1,85 @@
-BeastBinder 🐉📖
-Overview
+# BeastBinder
 
-BeastBinder is a React-based Dungeons & Dragons 5e Monster Comparison Tool that allows users to search, compare, and analyze monsters using data from the D&D 5e API. The app features a clean UI, dynamic component updates, and seamless navigation between pages.
+BeastBinder is a React Single Page Application (SPA) that utilizes the **D&D 5e API** to provide detailed monster comparisons and visualized data for game masters and players. The application includes a **Landing Dashboard**, a **Comparison Page**, and a **Timeline Page**, all following strict wireframe specifications.
 
-The application currently includes:
+## 🚀 Features
+- **Dynamic Monster Search**: Search for monsters and filter results based on input.
+- **Comparison Page**: Select a monster to display its stats dynamically.
+- **Chart.js Integration**: Placeholder components for future data visualization.
+- **React Router Navigation**: Smooth transitions between pages.
+- **Fully Responsive UI**: Styled for consistent usability across all devices.
 
-    🏠 Landing Page – Introduction and navigation.
-    📊 Comparison Page – Monster search, selection, and attribute comparison.
-    ⏳ Timeline Page – Future implementation for encounter timeline tracking.
-    🔍 Search System – Filters monsters based on user input.
-    📈 Graph Integrations (Upcoming) – Placeholder sections for future Chart.js graphs.
+## 🛠️ Setup Instructions
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/yourusername/beastbinder.git
+cd beastbinder-app
+```
 
-Setup Instructions
-1️⃣ Clone the Repository
-
-git clone https://github.com/yourusername/BeastBinder.git
-cd BeastBinder
-
-2️⃣ Install Dependencies
-
-Ensure you have Node.js and npm installed, then run:
-
+### **2. Install Dependencies**
+```sh
 npm install
+```
 
-3️⃣ Start the Development Server
-
+### **3. Start the Development Server**
+```sh
 npm start
+```
 
-This will launch the app at http://localhost:3000/.
-4️⃣ Build for Production
+- The app will now be accessible at `http://localhost:3000/`
+- Make sure to check the **console for errors** if any arise.
 
-To create an optimized build:
-
+### **4. Build for Production**
+To create an optimized build for deployment, run:
+```sh
 npm run build
+```
 
-This will generate static files in the /build directory.
-Project Structure
+This will generate a `build/` folder with minified assets ready for hosting.
 
+## 📂 Project Structure
+```
 beastbinder-app/
-├── public/                   # Static assets
-│   ├── assets/               # Icons, images
-│   ├── index.html            # Base HTML template
-│   ├── favicon.ico           # Custom app icon
-├── src/                      # Main React source files
-│   ├── components/           # Reusable UI components
-│   ├── pages/                # Page components (Landing, Comparison, Timeline)
-│   ├── styles/               # CSS files
-│   ├── utils/                # Helper functions
-│   ├── App.js                # Main app component
-│   ├── index.js              # Root render file
-├── package.json              # Dependencies & scripts
-├── README.md                 # Project documentation
+├── public/                # Static assets (favicon, manifest, images)
+├── src/                   # Source code
+│   ├── components/        # Reusable React components
+│   ├── pages/             # Page-specific components
+│   ├── routes/            # Routing logic
+│   ├── styles/            # Global and component styles
+│   ├── utils/             # Utility functions
+├── package.json           # Project dependencies
+├── README.md              # Project documentation
+├── .gitignore             # Git ignored files
+└── ...
+```
 
-Approach & Best Practices
-🛠️ Development Strategy
+## 📜 Approach & Development Strategy
+### **1. Component-Based Architecture**
+- All UI elements are designed as separate, reusable React components.
+- Components are structured in logical folders for **scalability** and **modularity**.
 
-    Component-Based Design 🏗️
-    Each feature is broken down into reusable components (e.g., MonsterSearch, MonsterDisplayName, MonsterCR).
-    React Router for Navigation 🔄
-    Smooth transitions between Landing, Comparison, and Timeline pages.
-    Preemptive Coding for API Integration 🚀
-        The app is structured to easily integrate the D&D 5e API later.
-        Placeholder components (e.g., AttributeGraph, EncounterGraph) are pre-positioned.
-    Performance Optimization ⚡
-        Lazy-loading assets to improve page load times.
-        Minimal re-renders using useState and useEffect efficiently.
+### **2. Strict Wireframe Adherence**
+- Each page follows the provided wireframes **pixel-perfectly**.
+- CSS styles are explicitly defined to maintain consistent **spacing, typography, and alignment**.
 
-Upcoming Features
+### **3. Routing & Navigation**
+- Implemented **React Router** to allow seamless navigation between pages.
+- Breadcrumbs provide contextual navigation between the **Comparison Page** and **Timeline Page**.
 
-✔️ Monster API Integration (Fetch data dynamically)
-✔️ Chart.js Graphs (Visualize attributes & combat stats)
-✔️ Encounter Timeline Management (Track and plan battles)
-✔️ Improved Animations & Styling
+### **4. Placeholder Data for Future API Integration**
+- Currently, monster data is stored in `MonsterSearch.js` as a **static array**.
+- Data fetching logic will be implemented later using the **D&D 5e API**.
+
+### **5. Future Enhancements**
+- Integrating **Chart.js** for graphical representation of monster stats.
+- Connecting to an **external API** to dynamically retrieve monster details.
+- Enhancing **search functionality** with additional filters.
+
+## 🛠️ Dependencies
+- **React** (Frontend framework)
+- **React Router** (Navigation)
+- **Chart.js** (Data visualization - Placeholder for now)
+- **CSS Modules** (Scoped styles)
+
+## 📝 License
+This project is licensed under the **MIT License**.
