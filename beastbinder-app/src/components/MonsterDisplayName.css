@@ -1,0 +1,53 @@
+/* Outer Box */
+.monster-name-container {
+    width: 782px;
+    height: 61px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Label ("Monster Name") */
+.monster-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 44px;
+}
+
+/* Inner Box */
+.monster-name-box {
+    width: 480px;
+    height: 42px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Monster Name Text */
+.monster-name-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 17px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Gray out the placeholder */
+}

@@ -1,22 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ComparisonPage.css";
 import Breadcrumbs from "../components/Breadcrumbs";
 import MonsterSearch from "../components/MonsterSearch";
-
+import MonsterDisplayName from "../components/MonsterDisplayName";
+import MonsterDescription from "../components/MonsterDescription";
 
 const ComparisonPage = () => {
+  const [selectedMonster, setSelectedMonster] = useState({ name: "", description: "" });
+
   return (
     <div className="comparison-page">
+      {/* Breadcrumbs Navigation */}
       <Breadcrumbs />
+
+      {/* Title Section */}
       <div className="comparison-title-container">
         <h2 className="comparison-title monsters-title">Monsters</h2>
         <h2 className="comparison-title details-title">Details</h2>
       </div>
+
+      {/* Content Placement Container */}
       <div className="comparison-content-container">
-      <MonsterSearch />
-        {/* Future content will be placed here */}
+        {/* Monster Search Component */}
+        <MonsterSearch onMonsterSelect={(monster) => setSelectedMonster(monster)} />
+
+        {/* Monster Display Name Component */}
+        <div className="monster-name-wrapper">
+          <MonsterDisplayName monsterName={selectedMonster.name} />
+        </div>
+
+        {/* Monster Description Component */}
+        <div className="monster-description-wrapper">
+          <MonsterDescription description={selectedMonster.description} />
+        </div>
       </div>
-      
     </div>
   );
 };

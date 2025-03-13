@@ -1,0 +1,62 @@
+/* Outer Box */
+.monster-description-container {
+    width: 782px;
+    height: 234px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Label ("Description") */
+.monster-description-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 13px;
+    left: 44px;
+}
+
+/* Inner Box */
+.monster-description-box {
+    width: 480px;
+    height: 214px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start; /* Aligns text to the top */
+    justify-content: flex-start;
+}
+
+/* Description Text */
+.description-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    padding: 0px 10px 10px 10px; /* Moves text higher */
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+

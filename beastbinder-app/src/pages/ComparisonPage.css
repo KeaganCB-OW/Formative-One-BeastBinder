@@ -32,14 +32,28 @@
     right: 361px;
 }
 
-/* Content Placement Container - Temporary */
+/* Content Placement Container */
 .comparison-content-container {
     width: 1318px;
     height: 791px;
-    background-color: rgba(0, 0, 255, 0.2); /* Different placeholder color for clarity */
+    background-color: rgba(0, 0, 255, 0.2); /* Placeholder color for clarity */
     border-radius: 11px;
     position: absolute;
-    top: calc(92px + 43px + 78px + 19px + 52px); /* Positioned directly below the title container */
+    top: calc(92px + 43px + 78px + 19px + 52px); /* Positioned below title container */
     left: 50%;
     transform: translateX(-50%); /* Centers the container */
 }
+
+/* Monster Name Wrapper - Ensures Correct Placement */
+.monster-name-wrapper {
+    position: absolute;
+    top: 0; /* Touching the top of the comparison content container */
+    right: 0; /* Touching the right edge of the comparison content container */
+}
+/* Monster Description Wrapper - Ensures Correct Placement */
+.monster-description-wrapper {
+    position: absolute;
+    top: 75px; /* Adjust positioning as needed */
+    right: 0; /* Touching the right edge of the comparison content container */
+}
+

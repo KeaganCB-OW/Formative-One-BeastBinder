@@ -6,19 +6,19 @@ const MonsterSearch = ({ onMonsterSelect }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedMonster, setSelectedMonster] = useState(null);
 
-  // Hardcoded test monster list (to be replaced with API data later)
+  // Hardcoded test monster list (now includes descriptions)
   const allMonsters = [
-    { name: "Goblin", cr: 1 },
-    { name: "Orc", cr: 2 },
-    { name: "Dragon", cr: 15 },
-    { name: "Beholder", cr: 13 },
-    { name: "Basilisk", cr: 6 },
+    { name: "Goblin", cr: 1, description: "A small, green creature that thrives in numbers." },
+    { name: "Orc", cr: 2, description: "A fierce warrior race known for their brute strength." },
+    { name: "Dragon", cr: 15, description: "A powerful, fire-breathing beast that rules the skies." },
+    { name: "Beholder", cr: 13, description: "A floating, eye-covered monster with deadly magical rays." },
+    { name: "Basilisk", cr: 6, description: "A serpent-like creature whose gaze can turn foes to stone." },
   ];
 
   // Dynamically filter monsters based on strict search input matching
   const filteredMonsters = searchTerm
     ? allMonsters.filter((monster) =>
-        monster.name.toLowerCase().startsWith(searchTerm.toLowerCase()) // Strict matching from the start of the word
+        monster.name.toLowerCase().startsWith(searchTerm.toLowerCase()) // Strict matching
       )
     : [];
 
@@ -34,7 +34,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
     console.log("Selected Monster:", selected); // Logs selected monster's details
 
     if (onMonsterSelect) {
-      onMonsterSelect(selected); // Pass selected monster data to parent component
+      onMonsterSelect(selected); // Pass selected monster's data to parent component
     }
   };
 
@@ -54,7 +54,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
         />
       </div>
 
-      {/* Search Results List (Results container is always visible) */}
+      {/* Search Results List (Always Visible) */}
       <div className="search-results-container">
         <div className="search-results">
           {filteredMonsters.length > 0 ? (
@@ -72,7 +72,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
               </div>
             ))
           ) : (
-            <p className="empty-message">No monsters found</p> // Placeholder message when no results match
+            <p className="empty-message">No monsters found</p>
           )}
         </div>
 
