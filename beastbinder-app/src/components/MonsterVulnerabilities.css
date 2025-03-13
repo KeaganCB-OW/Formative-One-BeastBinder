@@ -1,0 +1,50 @@
+/* Outer Box */
+.monster-vulnerabilities-container {
+    width: 381px;
+    height: 61px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Label ("Vulnerabilities") */
+.monster-vulnerabilities-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 15px;
+}
+
+/* Inner Box */
+.monster-vulnerabilities-box {
+    width: 195px;
+    height: 42px;
+    border-radius: 11px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Vulnerability Text */
+.vulnerability-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Gray out the placeholder */
+}

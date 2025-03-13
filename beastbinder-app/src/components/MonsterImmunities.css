@@ -1,0 +1,50 @@
+/* Outer Box (Container) */
+.monster-immunities-container {
+    width: 381px;
+    height: 61px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0; /* Align with the right edge */
+}
+
+/* Label ("Immunities") */
+.monster-immunities-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 15px;
+}
+
+/* Inner Box (Dynamic Immunity Display) */
+.monster-immunities-box {
+    width: 195px;
+    height: 42px;
+    border-radius: 11px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Immunity Text */
+.immunity-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(200, 200, 200, 1);
+}

@@ -8,12 +8,65 @@ const MonsterSearch = ({ onMonsterSelect }) => {
 
   // Hardcoded test monster list (now includes descriptions)
   const allMonsters = [
-    { name: "Goblin", cr: 1, size: "Small", hp: 7, ac: 15, description: "A small, green creature that thrives in numbers." },
-    { name: "Orc", cr: 2, size: "Medium", hp: 15, ac: 13, description: "A fierce warrior race known for their brute strength." },
-    { name: "Dragon", cr: 15, size: "Huge", hp: 300, ac: 19, description: "A powerful, fire-breathing beast that rules the skies." },
-    { name: "Beholder", cr: 13, size: "Large", hp: 180, ac: 18, description: "A floating, eye-covered monster with deadly magical rays." },
-    { name: "Basilisk", cr: 6, size: "Medium", hp: 52, ac: 12, description: "A serpent-like creature whose gaze can turn foes to stone." },
-];
+    {
+      name: "Beholder",
+      description: "A floating orb of flesh with a large central eye and many smaller eyestalks.",
+      size: "Large",
+      cr: "13",
+      hp: "180",
+      ac: "18",
+      vulnerability: "None",
+      resistances: "None", // ✅ Default to "None"
+      immunities: "Charm",
+    },
+    {
+      name: "Basilisk",
+      description: "A reptilian monster whose gaze can turn creatures to stone.",
+      size: "Medium",
+      cr: "3",
+      hp: "52",
+      ac: "15",
+      vulnerability: "Cold",
+      resistances: "Poison", // ✅ Added resistance
+      immunities: "None",
+    },
+    {
+      name: "Goblin",
+      description: "A small, green-skinned humanoid known for its trickery and mischief.",
+      size: "Small",
+      cr: "1/4",
+      hp: "7",
+      ac: "13",
+      vulnerability: "None",
+      resistances: "None",
+      immunities: "None",
+    },
+    {
+      name: "Fire Elemental",
+      description: "A being of pure fire that ignites everything it touches.",
+      size: "Large",
+      cr: "5",
+      hp: "102",
+      ac: "14",
+      vulnerability: "Cold",
+      resistances: "Fire", // ✅ Added Fire resistance
+      immunities: "Burn",
+    },
+    {
+      name: "Lich",
+      description: "A powerful undead spellcaster who has bound its soul to a phylactery.",
+      size: "Medium",
+      cr: "21",
+      hp: "135",
+      ac: "17",
+      vulnerability: "Radiant",
+      resistances: "Necrotic", // ✅ Added Necrotic resistance
+      immunities: "Poison",
+    },
+  ];
+  
+  
+
 
 
 

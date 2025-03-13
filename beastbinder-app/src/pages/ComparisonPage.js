@@ -8,7 +8,9 @@ import MonsterSize from "../components/MonsterSize";
 import MonsterCR from "../components/MonsterCR";
 import MonsterHP from "../components/MonsterHP";
 import MonsterAC from "../components/MonsterAC";
-
+import MonsterVulnerabilities from "../components/MonsterVulnerabilities";
+import MonsterResistances from "../components/MonsterResistances";
+import MonsterImmunities from "../components/MonsterImmunities";
 
 const ComparisonPage = () => {
   const [selectedMonster, setSelectedMonster] = useState({
@@ -17,6 +19,7 @@ const ComparisonPage = () => {
     size: "",
     cr: "",
     hp: "",
+    immunities: "None",
   });
 
   return (
@@ -57,11 +60,20 @@ const ComparisonPage = () => {
           <MonsterCR cr={selectedMonster.cr} />
         </div>
 
-        {/* Monster AC Component (TEMPORARY TESTING) */}
-<div className="monster-ac-wrapper">
-  <MonsterAC ac={selectedMonster.ac} />
-</div>
-        
+        {/* Monster Vulnerabilities Component */}
+        <div className="monster-vulnerabilities-wrapper">
+          <MonsterVulnerabilities vulnerability={selectedMonster.vulnerability} />
+        </div>
+
+        {/* Monster Resistances Component */}
+        <div className="monster-resistances-wrapper">
+          <MonsterResistances resistance={selectedMonster.resistances} />
+        </div>
+
+        {/* Monster Immunities Component */}
+        <div className="monster-immunities-wrapper">
+          <MonsterImmunities immunity={selectedMonster.immunities} />
+        </div>
       </div>
     </div>
   );
