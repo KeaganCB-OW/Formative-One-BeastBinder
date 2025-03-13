@@ -4,9 +4,10 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import MonsterSearch from "../components/MonsterSearch";
 import MonsterDisplayName from "../components/MonsterDisplayName";
 import MonsterDescription from "../components/MonsterDescription";
+import MonsterSize from "../components/MonsterSize";
 
 const ComparisonPage = () => {
-  const [selectedMonster, setSelectedMonster] = useState({ name: "", description: "" });
+  const [selectedMonster, setSelectedMonster] = useState({ name: "", description: "", size: "" });
 
   return (
     <div className="comparison-page">
@@ -32,6 +33,11 @@ const ComparisonPage = () => {
         {/* Monster Description Component */}
         <div className="monster-description-wrapper">
           <MonsterDescription description={selectedMonster.description} />
+        </div>
+
+        {/* Monster Size Component */}
+        <div className="monster-size-wrapper">
+          <MonsterSize size={selectedMonster.size} />
         </div>
       </div>
     </div>

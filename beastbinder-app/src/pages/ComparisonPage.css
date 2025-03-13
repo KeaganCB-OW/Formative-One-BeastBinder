@@ -50,10 +50,15 @@
     top: 0; /* Touching the top of the comparison content container */
     right: 0; /* Touching the right edge of the comparison content container */
 }
-/* Monster Description Wrapper - Ensures Correct Placement */
 .monster-description-wrapper {
     position: absolute;
-    top: 75px; /* Adjust positioning as needed */
-    right: 0; /* Touching the right edge of the comparison content container */
+    top: calc(13px + 61px); /* 13px gap + height of MonsterDisplayName */
+    right: 0; /* Aligns with the right edge of the comparison content container */
 }
 
+/* Monster Size Wrapper - Ensures Correct Placement */
+.monster-size-wrapper {
+    position: absolute;
+    top: calc(13px + 234px + 13px + 61px); /* 13px gap + height of MonsterDescription + 13px gap + height of MonsterDisplayName */
+    right: 0; /* Aligns with the right edge of the comparison content container */
+}

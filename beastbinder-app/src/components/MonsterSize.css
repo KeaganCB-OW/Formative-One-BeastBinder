@@ -1,0 +1,52 @@
+/* Outer Box */
+.monster-size-container {
+    width: 210px;
+    height: 53px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Label ("Size") */
+.monster-size-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 14px;
+}
+
+/* Inner Box */
+.monster-size-box {
+    width: 120px; /* Increased width */
+    height: 36px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 20px; /* Reduced from 35px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Size Text */
+.size-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Gray out the placeholder */
+}
