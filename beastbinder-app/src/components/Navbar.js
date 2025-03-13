@@ -5,7 +5,6 @@ import './Navbar.css';
 function Navbar() {
   const location = useLocation();
 
-  // Define routes for easy reference
   const routes = {
     landing: '/',
     comparison: '/comparison',
@@ -22,7 +21,6 @@ function Navbar() {
             location.pathname === routes.landing ? 'active' : ''
           }`}
         >
-          {/* Replace with your actual landing icon */}
           <img src="\assets\landing-icon.svg" alt="Landing" />
         </Link>
 
@@ -33,7 +31,6 @@ function Navbar() {
             location.pathname === routes.comparison ? 'active' : ''
           }`}
         >
-          {/* Replace with your actual comparison icon */}
           <img src="/assets/comparison-icon.svg" alt="Comparison" />
         </Link>
 
@@ -44,7 +41,6 @@ function Navbar() {
             location.pathname === routes.timeline ? 'active' : ''
           }`}
         >
-          {/* Replace with your actual timeline icon */}
           <img src="/assets/timeline-icon.svg" alt="Timeline" />
         </Link>
       </div>

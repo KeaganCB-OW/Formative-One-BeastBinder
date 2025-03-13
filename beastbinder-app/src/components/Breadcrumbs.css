@@ -1,8 +1,8 @@
-/* Breadcrumbs Container - Same as Hero Title Box */
+/* Breadcrumbs Container*/
 .breadcrumbs-container {
     height: 78px;
     width: calc(100% - 144px); /* Ensures 72px margin from both screen edges */
-    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.15); 
     border-radius: 13px;
     display: flex;
     align-items: center;

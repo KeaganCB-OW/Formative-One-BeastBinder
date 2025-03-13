@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import TimelinePage from "./pages/TimelinePage";
-import ComparisonPage from "./pages/ComparisonPage"; // Import the new page
-import Navbar from "./components/Navbar"; // Ensure Navbar is included
+import ComparisonPage from "./pages/ComparisonPage"; 
+import Navbar from "./components/Navbar"; 
 
 function App() {
   return (

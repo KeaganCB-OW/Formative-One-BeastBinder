@@ -7,9 +7,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #2B2B2B; /* Dark Background */
-  color: white; /* Ensure text is visible */
-  min-height: calc(100vh + 120px); /* Increases total page height by 20px */
+  background-color: #2B2B2B; 
+  color: white; 
+  min-height: calc(100vh + 120px); 
 }
 
 /* Landing Page Container */
@@ -27,13 +27,13 @@ body {
 .hero-title-box {
   height: 78px;
   width: calc(100% - 144px); /* Ensures 72px margin from both screen edges */
-  background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+  background-color: rgba(78, 78, 78, 0.25); 
   border-radius: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: calc(92px + 43px); /* Navbar height (92px) + 23px gap */
+  top: calc(92px + 43px); 
   left: 50%;
   transform: translateX(-50%); /* Centers the box horizontally */
 }
@@ -47,7 +47,7 @@ body {
 /* Hero Section */
 .hero-section {
   max-width: 800px;
-  margin-top: 150px; /* Adjusted to avoid overlap */
+  margin-top: 150px; 
 }
 
 .hero-section p {
@@ -64,27 +64,27 @@ body {
     color: rgba(219, 115, 115, 1);
   }
   
-/* Hero Content Box - Positioned Relative to Center */
+/* Hero Content Box */
 .hero-content-box {
     width: 782px;
     height: 424px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     display: flex;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start; 
     justify-content: center;
     padding: 30px;
     box-sizing: border-box;
     position: absolute;
-    top: calc(92px + 43px + 78px + 22px); /* Navbar (92px) + hero-title-box (78px) + 43px gap + 22px gap */
-    right: calc(50% + 10px); /* Right edge 10px from the center */
-    overflow: hidden; /* Prevents content from overflowing */
+    top: calc(92px + 43px + 78px + 22px); 
+    right: calc(50% + 10px); 
+    overflow: hidden;
 }
 
 /* Text Block Inside Hero Content Box */
 .hero-text-block {
     width: 717px;
-    height: 424px; /* Matches hero-content-box height */
+    height: 424px;
     position: relative;
     top: 0;
     left: 0;
@@ -97,23 +97,23 @@ body {
     font-size: 24px;
     line-height: 150%;
     letter-spacing: 0%;
-    color: white; /* Ensures readability */
+    color: white;
     margin-bottom: 15px;}
   
 
-/* Hero Image Box - Positioned Right of Center */
+/* Hero Image Box */
 .hero-image-box {
     width: 782px;
-    height: 424px; /* Matches hero-content-box */
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    height: 424px;
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     position: absolute;
-    top: calc(92px + 43px + 78px + 22px); /* Matches hero-content-box positioning */
-    left: calc(50% + 10px); /* Left edge 10px from the center */
+    top: calc(92px + 43px + 78px + 22px); 
+    left: calc(50% + 10px); 
     overflow: hidden;
 }
 
@@ -121,56 +121,55 @@ body {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the entire box */
-    border-radius: 11px; /* Matches the box's rounded corners */
+    object-fit: cover; 
+    border-radius: 11px; 
 }
 
-/* Third Rectangle - Centered Below Other Boxes */
-/* Third Rectangle - Centered and Spaced from Bottom */
+/* Third Rectangle */
 .third-content-box {
     width: 1583px;
     height: 395px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: calc(92px + 43px + 78px + 22px + 424px + 20px); /* Positioned 25px below hero-content-box and hero-image-box */
+    top: calc(92px + 43px + 78px + 22px + 424px + 20px); 
     left: 50%;
-    transform: translateX(-50%); /* Centers the box horizontally */
-    margin-bottom: 20px; /* Ensures 20px spacing from bottom */
+    transform: translateX(-50%);
+    margin-bottom: 20px;
 }
 
 
-/* Timeline Graph Box - Inside Third Content Box */
+/* Timeline Graph Box */
 .timeline-graph-box {
     width: 497px;
     height: 371px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: 13px; /* 13px from the top of .third-content-box */
-    left: 13px; /* 13px from the left of .third-content-box */
+    top: 13px;
+    left: 13px; 
 }
 
-/* Encounter CR Graph Box - Inside Third Content Box */
+/* Encounter CR Graph Box */
 .encounter-cr-graph-box {
     width: 497px;
     height: 371px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: 13px; /* 13px from the top of .third-content-box */
-    left: 13px; /* 13px from the left of .third-content-box */
+    top: 13px; 
+    left: 13px; 
 }
 
-/* Timeline Graph Box - Positioned to the Right of Encounter CR Graph */
+/* Timeline Graph Box */
 .timeline-graph-box {
     width: 497px;
     height: 371px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: 13px; /* 13px from the top of .third-content-box */
-    left: calc(13px + 497px + 13px); /* 13px from the left of .encounter-cr-graph-box */
+    top: 13px; 
+    left: calc(13px + 497px + 13px); 
 }
 
 /* Placeholder Text Styling */
@@ -179,12 +178,12 @@ body {
     font-size: 20px;
     color: white;
     text-align: center;
-    line-height: 371px; /* Vertically centers text inside the box */
+    line-height: 371px; 
 }
-/* Search Button Container - Positioned in Third Content Box */
+/* Search Button Container */
 .search-button-container {
   position: absolute;
-  right: 54px; /* Right edge is 54px from the right of third-content-box */
+  right: 54px;
   top: 167px;
 
 }

@@ -1,24 +1,24 @@
-/* Timeline Container - Now Invisible */
+/* Timeline Container */
 .timeline-container {
     width: 1182px;
     height: 841px;
-    background-color: transparent; /* Makes the container invisible */
+    background-color: transparent; 
     border-radius: 11px;
     position: absolute;
-    top: calc(92px + 43px + 78px + 19px); /* Positioned 19px below the breadcrumbs box */
+    top: calc(92px + 43px + 78px + 19px); 
     left: 50%;
     transform: translateX(-50%); /* Centers the container */
 }
 
-/* Timeline Chart Box - Inside Timeline Container */
+/* Timeline Chart Box */
 .timeline-chart-box {
     width: 648px;
     height: 841px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: 0; /* Aligns with the top of .timeline-container */
-    left: 0; /* Touching the left side of .timeline-container */
+    top: 0; 
+    left: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,29 +31,29 @@
     color: white;
     text-align: center;
 }
-/* Encounter CR Graph Box - Inside Timeline Container */
+/* Encounter CR Graph Box */
 .encounter-cr-chart-box {
     width: 515px;
     height: 406px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    top: 0; /* Aligns with the top of .timeline-container */
-    right: 0; /* Touching the right side of .timeline-container */
+    top: 0; 
+    right: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Encounter Stat Graph Box - Inside Timeline Container */
+/* Encounter Stat Graph Box */
 .encounter-stat-chart-box {
     width: 515px;
     height: 417px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent */
+    background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
-    bottom: 0; /* Aligns with the bottom of .timeline-container */
-    right: 0; /* Touching the right side of .timeline-container */
+    bottom: 0; 
+    right: 0; 
     display: flex;
     align-items: center;
     justify-content: center;

@@ -14,7 +14,7 @@
     width: 48px;
     height: 48px;
     position: absolute;
-    left: 26px; /* Moved 15px further left */
+    left: 26px; 
 }
 
 /* Inner Search Box */
@@ -31,7 +31,7 @@
 
 /* Search Input */
 .search-input {
-    width: calc(100% - 28px); /* 14px padding on both sides */
+    width: calc(100% - 28px); 
     height: 100%;
     border: none;
     background: transparent;
@@ -53,7 +53,7 @@
     background: rgba(78, 78, 78, 0.25);
     border-radius: 11px;
     position: absolute;
-    top: 74px; /* 13px below search bar */
+    top: 74px;
     left: 0;
     overflow: hidden;
     display: flex;

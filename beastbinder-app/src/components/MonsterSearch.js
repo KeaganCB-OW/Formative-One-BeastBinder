@@ -6,7 +6,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedMonster, setSelectedMonster] = useState(null);
 
-  // Hardcoded test monster list (now includes descriptions)
+  // Hardcoded test monster list
   const allMonsters = [
     {
       name: "Beholder",
@@ -16,7 +16,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       hp: "180",
       ac: "18",
       vulnerability: "None",
-      resistances: "None", // ✅ Default to "None"
+      resistances: "None",
       immunities: "Charm",
     },
     {
@@ -27,7 +27,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       hp: "52",
       ac: "15",
       vulnerability: "Cold",
-      resistances: "Poison", // ✅ Added resistance
+      resistances: "Poison",
       immunities: "None",
     },
     {
@@ -49,7 +49,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       hp: "102",
       ac: "14",
       vulnerability: "Cold",
-      resistances: "Fire", // ✅ Added Fire resistance
+      resistances: "Fire",
       immunities: "Burn",
     },
     {
@@ -60,16 +60,10 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       hp: "135",
       ac: "17",
       vulnerability: "Radiant",
-      resistances: "Necrotic", // ✅ Added Necrotic resistance
+      resistances: "Necrotic", 
       immunities: "Poison",
     },
   ];
-  
-  
-
-
-
-
 
   // Dynamically filter monsters based on strict search input matching
   const filteredMonsters = searchTerm

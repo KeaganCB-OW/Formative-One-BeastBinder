@@ -23,12 +23,12 @@
 
 /* Inner Box */
 .monster-size-box {
-    width: 120px; /* Increased width */
+    width: 120px; 
     height: 36px;
     background: rgba(78, 78, 78, 0.25);
     border-radius: 11px;
     position: absolute;
-    right: 20px; /* Reduced from 35px */
+    right: 20px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,5 +48,5 @@
 
 /* Placeholder Styling */
 .placeholder {
-    color: rgba(255, 255, 255, 0.5); /* Gray out the placeholder */
+    color: rgba(255, 255, 255, 0.5);
 }

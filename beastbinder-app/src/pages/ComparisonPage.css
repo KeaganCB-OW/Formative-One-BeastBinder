@@ -22,12 +22,12 @@
     color: rgba(255, 255, 255, 1);
     position: absolute;
 }
-/* Monsters Title - Positioned 207px from Left Edge */
+/* Monsters Title */
 .monsters-title {
     left: 207px;
 }
 
-/* Details Title - Positioned so its Right Edge is 361px from Right Edge */
+/* Details Title */
 .details-title {
     right: 361px;
 }
@@ -39,83 +39,83 @@
     background-color: transparent;
     border-radius: 11px;
     position: absolute;
-    top: calc(92px + 43px + 78px + 19px + 52px); /* Positioned below title container */
+    top: calc(92px + 43px + 78px + 19px + 52px); 
     left: 50%;
     transform: translateX(-50%); /* Centers the container */
 }
 
-/* Monster Name Wrapper - Ensures Correct Placement */
+/* Monster Name Wrapper */
 .monster-name-wrapper {
     position: absolute;
-    top: 0; /* Touching the top of the comparison content container */
-    right: 0; /* Touching the right edge of the comparison content container */
+    top: 0; 
+    right: 0; 
 }
 .monster-description-wrapper {
     position: absolute;
-    top: calc(13px + 61px); /* 13px gap + height of MonsterDisplayName */
-    right: 0; /* Aligns with the right edge of the comparison content container */
+    top: calc(13px + 61px); 
+    right: 0; 
 }
 
-/* Monster Size Wrapper - Ensures Correct Placement */
+/* Monster Size Wrapper */
 .monster-size-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px); /* 13px gap + height of MonsterDescription + 13px gap + height of MonsterDisplayName */
-    right: 0; /* Aligns with the right edge of the comparison content container */
+    top: calc(13px + 234px + 13px + 61px); 
+    right: 0; 
 }
-/* Monster CR Wrapper - Ensures Correct Placement */
+/* Monster CR Wrapper */
 .monster-cr-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px); /* 13px below Monster Description */
-    right: calc(18.52px + 210px); /* 18.52px to the left of MonsterSize */
+    top: calc(13px + 234px + 13px + 61px);
+    right: calc(18.52px + 210px);
 }
 
 /* Monster Vulnerabilities Wrapper */
 .monster-vulnerabilities-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px + 13px + 53px); /* 13px below MonsterSize */
-    right: 0; /* Align with the right edge */
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px); 
+    right: 0;
 }
 
-/* Monster Resistances Wrapper - Positioned 13px below Monster Vulnerabilities */
+/* Monster Resistances Wrapper */
 .monster-resistances-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px); /* 13px below MonsterVulnerabilities */
-    right: 0; /* Align with the right edge */
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px);
+    right: 0;
 }
 
 /* Monster Immunities Wrapper */
 .monster-immunities-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px); /* 13px below MonsterResistances */
-    right: 0; /* Align with the right edge */
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px); 
+    right: 0; 
 }
 
 /* Monster AC Wrapper */
 .monster-ac-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px); /* 13px below MonsterImmunities */
-    right: 0; /* Align with the right edge */
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px); 
+    right: 0; 
 }
 
 /* Monster HP Wrapper */
 .monster-hp-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px); /* 13px below MonsterImmunities */
-    right: calc(20px + 153px); /* 20px to the right of MonsterAC */
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px);
+    right: calc(20px + 153px);
 }
 
 /* Attribute Graph Wrapper */
 .attribute-graph-wrapper {
     position: absolute;
-    top: calc(13px + 234px + 13px + 61px); /* 13px below MonsterDescription */
-    left: calc(20px + 515px); /* 20px to the right of MonsterSearch */
+    top: calc(13px + 234px + 13px + 61px); 
+    left: calc(20px + 515px);
 }
 
 /* Attribute Graph Placeholder */
 .attribute-graph-placeholder {
     width: 381px;
     height: 465px;
-    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    background-color: rgba(78, 78, 78, 0.25);
     border-radius: 11px;
     display: flex;
     align-items: center;
