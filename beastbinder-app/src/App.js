@@ -4,6 +4,8 @@ import LandingPage from "./pages/LandingPage";
 import TimelinePage from "./pages/TimelinePage";
 import ComparisonPage from "./pages/ComparisonPage"; 
 import Navbar from "./components/Navbar"; 
+import EnhancedComparisonPage from "./pages/EnhancedComparisonPage";
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/comparison" element={<ComparisonPage />} /> {/* New Route */}
+        <Route path="/enhanced-comparison" element={<EnhancedComparisonPage />} />
       </Routes>
     </Router>
   );

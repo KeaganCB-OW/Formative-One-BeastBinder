@@ -1,0 +1,64 @@
+/* Enhanced Comparison Page - Base Styling */
+.enhanced-comparison-page {
+    background-color: #2B2B2B;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Container */
+.comparison-title-container {
+    width: 1318px;
+    height: 52px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 11px;
+    position: absolute;
+    top: calc(92px + 43px + 78px + 19px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content Container */
+.comparison-content-container {
+    width: 1318px;
+    height: 791px;
+    background-color: rgba(0, 0, 255, 0.2);
+    border-radius: 11px;
+    position: absolute;
+    top: calc(92px + 43px + 78px + 19px + 52px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Monster Sections */
+.monster-section {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+/* Attribute Graph Placeholder */
+.attribute-graph-box {
+    width: 381px;
+    height: 465px;
+    background-color: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}

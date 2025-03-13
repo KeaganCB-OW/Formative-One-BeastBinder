@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./MonsterSearch.css";
+import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
 
 const MonsterSearch = ({ onMonsterSelect }) => {
   // State for search input and selected monster
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedMonster, setSelectedMonster] = useState(null);
+  const navigate = useNavigate(); // ✅ Initialize navigation hook
 
   // Hardcoded test monster list
   const allMonsters = [
@@ -60,7 +62,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       hp: "135",
       ac: "17",
       vulnerability: "Radiant",
-      resistances: "Necrotic", 
+      resistances: "Necrotic",
       immunities: "Poison",
     },
   ];
@@ -86,6 +88,11 @@ const MonsterSearch = ({ onMonsterSelect }) => {
     if (onMonsterSelect) {
       onMonsterSelect(selected); // Pass selected monster's data to parent component
     }
+  };
+
+  // ✅ Navigation Logic for Compare Button
+  const handleCompare = () => {
+    navigate("/enhanced-comparison");
   };
 
   return (
@@ -126,8 +133,12 @@ const MonsterSearch = ({ onMonsterSelect }) => {
           )}
         </div>
 
-        {/* Compare Button (Only visible if there are results) */}
-        {filteredMonsters.length > 0 && <button className="compare-button">Compare</button>}
+        {/* ✅ Compare Button (Only visible if there are results) */}
+        {filteredMonsters.length > 0 && (
+          <button className="compare-button" onClick={handleCompare}>
+            Compare
+          </button>
+        )}
       </div>
     </div>
   );
