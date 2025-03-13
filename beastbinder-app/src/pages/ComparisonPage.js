@@ -19,7 +19,10 @@ const ComparisonPage = () => {
     size: "",
     cr: "",
     hp: "",
-    immunities: "None",
+    ac: "",
+    vulnerabilities: "",
+    resistances: "",
+    immunities: "",
   });
 
   return (
@@ -50,6 +53,11 @@ const ComparisonPage = () => {
           <MonsterDescription description={selectedMonster.description} />
         </div>
 
+        {/* Attribute Graph Placeholder */}
+        <div className="attribute-graph-wrapper">
+          <div className="attribute-graph-placeholder">Attribute Graph (Placeholder)</div>
+        </div>
+
         {/* Monster Size Component */}
         <div className="monster-size-wrapper">
           <MonsterSize size={selectedMonster.size} />
@@ -74,6 +82,17 @@ const ComparisonPage = () => {
         <div className="monster-immunities-wrapper">
           <MonsterImmunities immunity={selectedMonster.immunities} />
         </div>
+
+        {/* Monster AC Component */}
+        <div className="monster-ac-wrapper">
+          <MonsterAC ac={selectedMonster.ac} />
+        </div>
+
+        {/* Monster HP Component */}
+        <div className="monster-hp-wrapper">
+          <MonsterHP hp={selectedMonster.hp} />
+        </div>
+
       </div>
     </div>
   );

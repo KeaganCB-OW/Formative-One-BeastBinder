@@ -2,7 +2,7 @@
 .comparison-title-container {
     width: 1318px;
     height: 52px;
-    background-color: rgba(255, 0, 0, 0.2); /* Placeholder color for development */
+    background-color: transparent;
     border-radius: 11px;
     position: absolute;
     top: calc(92px + 43px + 78px + 19px); /* Positioned 19px below the breadcrumbs */
@@ -36,7 +36,7 @@
 .comparison-content-container {
     width: 1318px;
     height: 791px;
-    background-color: rgba(0, 0, 255, 0.2); /* Placeholder color for clarity */
+    background-color: transparent;
     border-radius: 11px;
     position: absolute;
     top: calc(92px + 43px + 78px + 19px + 52px); /* Positioned below title container */
@@ -89,5 +89,41 @@
     top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px); /* 13px below MonsterResistances */
     right: 0; /* Align with the right edge */
 }
+
+/* Monster AC Wrapper */
+.monster-ac-wrapper {
+    position: absolute;
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px); /* 13px below MonsterImmunities */
+    right: 0; /* Align with the right edge */
+}
+
+/* Monster HP Wrapper */
+.monster-hp-wrapper {
+    position: absolute;
+    top: calc(13px + 234px + 13px + 61px + 13px + 53px + 13px + 61px + 13px + 61px + 13px + 61px); /* 13px below MonsterImmunities */
+    right: calc(20px + 153px); /* 20px to the right of MonsterAC */
+}
+
+/* Attribute Graph Wrapper */
+.attribute-graph-wrapper {
+    position: absolute;
+    top: calc(13px + 234px + 13px + 61px); /* 13px below MonsterDescription */
+    left: calc(20px + 515px); /* 20px to the right of MonsterSearch */
+}
+
+/* Attribute Graph Placeholder */
+.attribute-graph-placeholder {
+    width: 381px;
+    height: 465px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent for contrast */
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+
 
 

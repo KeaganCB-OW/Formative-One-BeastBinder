@@ -10,7 +10,7 @@ const MonsterImmunities = ({ immunity }) => {
       Cold: "rgba(0, 168, 255, 1)", // Cyan
       Necrotic: "rgba(108, 92, 231, 1)", // Purple
       Poison: "rgba(83, 163, 81, 1)", // Green
-      Burn: "rgb(180, 184, 97)", // Green
+      Burn: "rgb(159, 163, 81)", // Green
       "Unknown": "rgba(78, 78, 78, 0.5)", // Default Gray
     };
     return colorMap[immunity] || colorMap["Unknown"];
