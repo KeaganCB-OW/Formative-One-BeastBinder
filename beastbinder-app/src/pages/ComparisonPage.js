@@ -7,6 +7,8 @@ import MonsterDescription from "../components/MonsterDescription";
 import MonsterSize from "../components/MonsterSize";
 import MonsterCR from "../components/MonsterCR";
 import MonsterHP from "../components/MonsterHP";
+import MonsterAC from "../components/MonsterAC";
+
 
 const ComparisonPage = () => {
   const [selectedMonster, setSelectedMonster] = useState({
@@ -54,6 +56,11 @@ const ComparisonPage = () => {
         <div className="monster-cr-wrapper">
           <MonsterCR cr={selectedMonster.cr} />
         </div>
+
+        {/* Monster AC Component (TEMPORARY TESTING) */}
+<div className="monster-ac-wrapper">
+  <MonsterAC ac={selectedMonster.ac} />
+</div>
         
       </div>
     </div>

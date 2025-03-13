@@ -1,0 +1,51 @@
+/* Outer Box */
+.monster-ac-container {
+    width: 153px;
+    height: 53px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Label ("AC") */
+.monster-ac-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 24px;
+}
+
+/* Inner Box */
+.monster-ac-box {
+    width: 62px;
+    height: 37px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* AC Text */
+.ac-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+/* Placeholder Styling */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Gray out the placeholder */
+}
