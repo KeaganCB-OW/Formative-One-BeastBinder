@@ -62,3 +62,10 @@
     top: calc(13px + 234px + 13px + 61px); /* 13px gap + height of MonsterDescription + 13px gap + height of MonsterDisplayName */
     right: 0; /* Aligns with the right edge of the comparison content container */
 }
+/* Monster CR Wrapper - Ensures Correct Placement */
+.monster-cr-wrapper {
+    position: absolute;
+    top: calc(13px + 234px + 13px + 61px); /* 13px below Monster Description */
+    right: calc(18.52px + 210px); /* 18.52px to the left of MonsterSize */
+}
+

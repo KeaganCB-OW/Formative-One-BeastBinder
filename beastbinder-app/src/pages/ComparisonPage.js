@@ -5,9 +5,17 @@ import MonsterSearch from "../components/MonsterSearch";
 import MonsterDisplayName from "../components/MonsterDisplayName";
 import MonsterDescription from "../components/MonsterDescription";
 import MonsterSize from "../components/MonsterSize";
+import MonsterCR from "../components/MonsterCR";
+import MonsterHP from "../components/MonsterHP";
 
 const ComparisonPage = () => {
-  const [selectedMonster, setSelectedMonster] = useState({ name: "", description: "", size: "" });
+  const [selectedMonster, setSelectedMonster] = useState({
+    name: "",
+    description: "",
+    size: "",
+    cr: "",
+    hp: "",
+  });
 
   return (
     <div className="comparison-page">
@@ -23,7 +31,9 @@ const ComparisonPage = () => {
       {/* Content Placement Container */}
       <div className="comparison-content-container">
         {/* Monster Search Component */}
-        <MonsterSearch onMonsterSelect={(monster) => setSelectedMonster(monster)} />
+        <MonsterSearch
+          onMonsterSelect={(monster) => setSelectedMonster(monster)}
+        />
 
         {/* Monster Display Name Component */}
         <div className="monster-name-wrapper">
@@ -39,6 +49,12 @@ const ComparisonPage = () => {
         <div className="monster-size-wrapper">
           <MonsterSize size={selectedMonster.size} />
         </div>
+
+        {/* Monster CR Component */}
+        <div className="monster-cr-wrapper">
+          <MonsterCR cr={selectedMonster.cr} />
+        </div>
+        
       </div>
     </div>
   );

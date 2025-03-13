@@ -8,12 +8,13 @@ const MonsterSearch = ({ onMonsterSelect }) => {
 
   // Hardcoded test monster list (now includes descriptions)
   const allMonsters = [
-    { name: "Goblin", cr: 1, size: "Small", description: "A small, green creature that thrives in numbers." },
-    { name: "Orc", cr: 2, size: "Medium", description: "A fierce warrior race known for their brute strength." },
-    { name: "Dragon", cr: 15, size: "Huge", description: "A powerful, fire-breathing beast that rules the skies." },
-    { name: "Beholder", cr: 13, size: "Large", description: "A floating, eye-covered monster with deadly magical rays." },
-    { name: "Basilisk", cr: 6, size: "Medium", description: "A serpent-like creature whose gaze can turn foes to stone." },
+    { name: "Goblin", cr: 1, size: "Small", hp: 7, description: "A small, green creature that thrives in numbers." },
+    { name: "Orc", cr: 2, size: "Medium", hp: 15, description: "A fierce warrior race known for their brute strength." },
+    { name: "Dragon", cr: 15, size: "Huge", hp: 300, description: "A powerful, fire-breathing beast that rules the skies." },
+    { name: "Beholder", cr: 13, size: "Large", hp: 180, description: "A floating, eye-covered monster with deadly magical rays." },
+    { name: "Basilisk", cr: 6, size: "Medium", hp: 52, description: "A serpent-like creature whose gaze can turn foes to stone." },
 ];
+
 
 
   // Dynamically filter monsters based on strict search input matching
