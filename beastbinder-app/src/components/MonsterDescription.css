@@ -32,12 +32,11 @@
     right: 13px;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px;
+    padding: 0 10px; /* Remove top padding */
     overflow-y: auto;
     box-sizing: border-box;
     display: flex;
-    align-items: flex-start; /* Aligns text to the top */
-    justify-content: flex-start;
+    align-items: flex-start; /* Align text to the top */
 }
 
 /* Description Text */
@@ -49,10 +48,13 @@
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
     text-align: left;
+    position: absolute; /* Fine control over placement */
+    top: 0px; /* Ensures text starts 12px from top */
+    left: 17px;
+    right: 10px;
     width: calc(100% - 20px);
-    max-height: calc(100% - 20px);
-    padding: 0px 10px 10px 10px; /* Moves text higher */
 }
+
 
 /* Placeholder Styling */
 .placeholder {
