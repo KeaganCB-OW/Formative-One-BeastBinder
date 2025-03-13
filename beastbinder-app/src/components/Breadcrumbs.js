@@ -9,9 +9,14 @@ const Breadcrumbs = () => {
   // Determine if the current page is the Timeline Page
   const isTimelinePage = location.pathname === "/timeline";
 
+  // Use different chevron icons based on the page
+  const chevronSrc = isTimelinePage
+    ? "/assets/chevron-bright.svg" // Bright Chevron
+    : "/assets/chevron-dimmed.svg"; // Dimmed Chevron
+
   return (
     <div className="breadcrumbs-container">
-      {/* Monsters Link (Dynamically styled based on page) */}
+      {/* Monsters Link */}
       <span
         className={`breadcrumb-text ${isTimelinePage ? "dimmed" : "bright"}`}
         onClick={() => navigate("/comparison")}
@@ -19,14 +24,10 @@ const Breadcrumbs = () => {
         Monsters
       </span>
 
-      {/* Chevron Icon (Dynamically styled based on page) */}
-      <img
-        src="/assets/chevron-icon.svg"
-        alt="Chevron Icon"
-        className={`breadcrumb-chevron ${isTimelinePage ? "bright" : "dimmed"}`}
-      />
+      {/* Chevron Icon - Uses different assets based on state */}
+      <img src={chevronSrc} alt="Chevron Icon" className="breadcrumb-chevron" />
 
-      {/* Encounter Timeline Link (Dynamically styled based on page) */}
+      {/* Encounter Timeline Link */}
       <span
         className={`breadcrumb-text ${isTimelinePage ? "bright" : "dimmed"}`}
         onClick={() => navigate("/timeline")}
