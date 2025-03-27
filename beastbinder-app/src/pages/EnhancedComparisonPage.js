@@ -13,6 +13,8 @@ import MonsterHP from "../components/MonsterHP";
 import MonsterAC from "../components/MonsterAC";
 import AttributeRadarGraph from "../components/AttributeRadarGraph";
 import MonsterSearchRight from "../components/MonsterSearchRight";
+import HpComparisonPieChart from "../components/HpComparisonPieChart";
+import MonsterStatsBarChart from "../components/MonsterStatsBarChart";
 
 const EnhancedComparisonPage = () => {
   const location = useLocation();
@@ -33,9 +35,6 @@ const EnhancedComparisonPage = () => {
       <div className="enhanced-comparison-container">
         <div className="enhanced-monster-name-wrapper">
           <MonsterDisplayName monsterName={selectedMonster?.name} />
-        </div>
-        <div className="enhanced-monster-description-wrapper">
-          <MonsterDescription description={selectedMonster?.description} />
         </div>
         <div className="enhanced-monster-cr-wrapper">
           <MonsterCR cr={selectedMonster?.cr} />
@@ -60,11 +59,6 @@ const EnhancedComparisonPage = () => {
         <div className="enhanced-monster-ac-wrapper">
           <MonsterAC ac={selectedMonster?.ac} />
         </div>
-        <div className="enhanced-monster-description-wrapper-right">
-          <MonsterDescription description={selectedMonsterRight?.description} />{" "}
-          {/* description={selectedMonsterRight.description} */}
-        </div>
-
         <div className="enhanced-monster-cr-wrapper-right">
           <MonsterCR cr={selectedMonsterRight?.cr} />{" "}
           {/* cr={selectedMonsterRight.cr} */}
@@ -108,6 +102,26 @@ const EnhancedComparisonPage = () => {
             monsterRight={selectedMonsterRight}
           />
         </div>
+        <div className="comparison-bargraph-placeholder">
+          <MonsterStatsBarChart
+            monsterLeft={selectedMonster}
+            monsterRight={selectedMonsterRight}
+          />
+        </div>
+        <div className="comparison-bargraph-label">Stats Comparison</div>
+
+        
+        <div className="comparison-piechart-placeholder">
+          {selectedMonster && selectedMonsterRight && (
+            <HpComparisonPieChart
+              hpLeft={selectedMonster.hp}
+              hpRight={selectedMonsterRight.hp}
+              nameLeft={selectedMonster.name}
+              nameRight={selectedMonsterRight.name}
+            />
+          )}
+        </div>
+        <div className="comparison-piechart-label">HP Comparison</div>
         <div className="enhanced-monster-name-wrapper-right">
           <MonsterSearchRight onRightMonsterSelect={setSelectedMonsterRight} />
         </div>

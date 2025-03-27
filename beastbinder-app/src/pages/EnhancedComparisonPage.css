@@ -14,46 +14,39 @@
     top: 0;
     left: 0;
   }
-  
-  .enhanced-monster-description-wrapper {
-    position: absolute;
-    top: 83px; /* MonsterDisplayName is 61px tall + 22px gap */
-    left: 0;
-  }
-  
   .enhanced-monster-cr-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px); /* name + description height + gap */
+    top: calc(83px ); /* name + description height + gap */
     left: 0;
   }
   .enhanced-monster-size-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px); /* Same as CR component */
+    top: calc(83px); /* Same as CR component */
     left: calc(153px + 25px); /* 153px is MonsterCR width + 25px gap */
   }
   .enhanced-monster-vulnerability-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px + 53px + 13px); /* CR component height + spacing */
+    top: calc(83px + 53px + 13px); /* CR component height + spacing */
     left: 0;
   }
   .enhanced-monster-resistances-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px);
-    left: 381px; /* Ensures the LEFT edge touches the container's LEFT edge */
+    top: calc(83px + 53px + 13px + 61px + 13px);
+    left: 388px; /* Ensures the LEFT edge touches the container's LEFT edge */
   }
   .enhanced-monster-immunities-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px); 
-    left: 381px; /* Ensures the LEFT edge touches the container's LEFT edge */
+    top: calc(83px + 53px + 13px + 61px + 13px + 61px + 13px); 
+    left: 388px; /* Ensures the LEFT edge touches the container's LEFT edge */
   }
   .enhanced-monster-hp-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px); 
+    top: calc(83px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px); 
     left: 0;
   }
   .enhanced-monster-ac-wrapper {
     position: absolute;
-    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px);
+    top: calc(83px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px);
     left: calc(153px + 17px); /* 153px = MonsterHP width */
   }
   .enhanced-monster-name-wrapper-right {
@@ -61,61 +54,56 @@
     top: 0px; /* Matches original name component top */
     right: 0; /* Right edge touches right side of container */
   }
-  .enhanced-monster-description-wrapper-right {
-    position: absolute;
-    top: calc(0px + 61px + 22px); /* 61px (name height) + 22px spacing */
-    right: 0; /* Aligns with right edge of container */
-  }
   .enhanced-monster-cr-wrapper-right {
     position: absolute;
-    top: calc(61px + 22px + 234px + 26px); /* name + spacing + description height + spacing */
+    top: calc(83px); /* name + spacing + description height + spacing */
     right: 0;
   }
   .enhanced-monster-size-wrapper-right {
     position: absolute;
-    top: calc(61px + 22px + 234px + 26px); /* same top as CR */
+    top: calc(83px); /* same top as CR */
     right: calc(153px + 25px); /* 153px CR width + 25px gap */
   }
   .enhanced-monster-vulnerabilities-wrapper-right {
     position: absolute;
-    top: calc(61px + 22px + 234px + 26px + 53px + 13px); /* Name + gap + Description + gap + CR height + gap */
+    top: calc(83px + 53px + 13px); /* Name + gap + Description + gap + CR height + gap */
     right: 0;
   }
   .enhanced-monster-resistances-wrapper-right {
     position: absolute;
     top: calc(
-      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px
+      83px + 53px + 13px + 61px + 13px
     ); /* stacked spacing below vulnerabilities */
     right: 0;
   }
   .enhanced-monster-immunities-wrapper-right {
     position: absolute;
     top: calc(
-      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px
+      83px + 53px + 13px + 61px + 13px + 61px + 13px
     );
     right: 0;
   }
   .enhanced-monster-hp-wrapper-right {
     position: absolute;
     top: calc(
-      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
+      83px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
     );
     right: 0;
   }
   .enhanced-monster-ac-wrapper-right {
     position: absolute;
     top: calc(
-      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
+      83px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
     ); /* Same as HP */
     right: calc(153px + 17px); /* 153px HP width + 17px spacing */
   }
   .comparison-graph-placeholder {
-    width: 734px;
-    height: 481px;
+    width: 780px;
+    height: 710px;
     background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent placeholder */
     border-radius: 11px;
     position: absolute;
-    bottom: 0;
+    top: 83px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -125,12 +113,69 @@
     font-family: "Roboto", sans-serif;
     font-size: 24px;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  .comparison-bargraph-placeholder {
+    width: 388px;
+    height: 354px;
+    background-color: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    left: 0;
+    top: 439px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+  }
+
+  .comparison-piechart-placeholder {
+    width: 388px;
+    height: 354px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent placeholder */
+    border-radius: 11px;
+    position: absolute;
+    right: 0;
+    top: 439px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 40px;
+    box-sizing: border-box; 
+  }
+
+.comparison-bargraph-label {
+  position: absolute;
+  top: 450px; /* Adjust as needed */
+  left: 0;
+  width: 388px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.comparison-piechart-label {
+  position: absolute;
+  top: 450px; /* Adjust as needed */
+  right: 0;
+  width: 388px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
