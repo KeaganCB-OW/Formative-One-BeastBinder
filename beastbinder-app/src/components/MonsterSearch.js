@@ -146,7 +146,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
 
         {/* Compare Button */}
         <button className="compare-button" onClick={handleCompare}>
-          Search Monsters
+          Compare
         </button>
       </div>
     </div>

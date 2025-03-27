@@ -31,7 +31,6 @@ const EnhancedComparisonPage = () => {
       <EnhancedComparisonTitle />
       {/* Comparison Container */}
       <div className="enhanced-comparison-container">
-
         <div className="enhanced-monster-name-wrapper">
           <MonsterDisplayName monsterName={selectedMonster?.name} />
         </div>
@@ -45,7 +44,9 @@ const EnhancedComparisonPage = () => {
           <MonsterSize size={selectedMonster?.size} />
         </div>
         <div className="enhanced-monster-vulnerability-wrapper">
-          <MonsterVulnerabilities vulnerability={selectedMonster?.vulnerability} />
+          <MonsterVulnerabilities
+            vulnerability={selectedMonster?.vulnerability}
+          />
         </div>
         <div className="enhanced-monster-resistances-wrapper">
           <MonsterResistances resistance={selectedMonster?.resistances} />
@@ -60,28 +61,45 @@ const EnhancedComparisonPage = () => {
           <MonsterAC ac={selectedMonster?.ac} />
         </div>
         <div className="enhanced-monster-description-wrapper-right">
-          <MonsterDescription /> {/* Right monster remains unchanged */}
+          <MonsterDescription description={selectedMonsterRight?.description} />{" "}
+          {/* description={selectedMonsterRight.description} */}
         </div>
+
         <div className="enhanced-monster-cr-wrapper-right">
-          <MonsterCR /> {/* Right monster remains unchanged */}
+          <MonsterCR cr={selectedMonsterRight?.cr} />{" "}
+          {/* cr={selectedMonsterRight.cr} */}
         </div>
+
         <div className="enhanced-monster-size-wrapper-right">
-          <MonsterSize /> {/* Right monster remains unchanged */}
+          <MonsterSize size={selectedMonsterRight?.size} />{" "}
+          {/* size={selectedMonsterRight.size} */}
         </div>
+
         <div className="enhanced-monster-vulnerabilities-wrapper-right">
-          <MonsterVulnerabilities /> {/* Right monster remains unchanged */}
+          <MonsterVulnerabilities
+            vulnerability={selectedMonsterRight?.vulnerability}
+          />{" "}
+          {/* vulnerability={selectedMonsterRight.vulnerability} */}
         </div>
+
         <div className="enhanced-monster-resistances-wrapper-right">
-          <MonsterResistances /> {/* Right monster remains unchanged */}
+          <MonsterResistances resistance={selectedMonsterRight?.resistances} />{" "}
+          {/* resistance={selectedMonsterRight.resistances} */}
         </div>
+
         <div className="enhanced-monster-immunities-wrapper-right">
-          <MonsterImmunities /> {/* Right monster remains unchanged */}
+          <MonsterImmunities immunity={selectedMonsterRight?.immunities} />{" "}
+          {/* immunity={selectedMonsterRight.immunities} */}
         </div>
+
         <div className="enhanced-monster-hp-wrapper-right">
-          <MonsterHP /> {/* Right monster remains unchanged */}
+          <MonsterHP hp={selectedMonsterRight?.hp} />{" "}
+          {/* hp={selectedMonsterRight.hp} */}
         </div>
+
         <div className="enhanced-monster-ac-wrapper-right">
-          <MonsterAC /> {/* Right monster remains unchanged */}
+          <MonsterAC ac={selectedMonsterRight?.ac} />{" "}
+          {/* ac={selectedMonsterRight.ac} */}
         </div>
 
         <div className="comparison-graph-placeholder">
@@ -91,7 +109,7 @@ const EnhancedComparisonPage = () => {
           />
         </div>
         <div className="enhanced-monster-name-wrapper-right">
-        <MonsterSearchRight onRightMonsterSelect={(monster) => setSelectedMonsterRight(monster)} />
+          <MonsterSearchRight onRightMonsterSelect={setSelectedMonsterRight} />
         </div>
       </div>
     </div>
