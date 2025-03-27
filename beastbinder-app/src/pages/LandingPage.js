@@ -1,6 +1,7 @@
 import React from "react";
 import SearchMonstersButton from "../components/SearchMonstersButton";
 import "./LandingPage.css";
+import RecentCRChart from "../components/RecentCRChart";
 
 const LandingPage = () => {
   return (
@@ -37,12 +38,9 @@ const LandingPage = () => {
       </div>
 
       <div className="third-content-box">
-  <div className="encounter-cr-graph-box">
-    <p className="graph-placeholder-text">Encounter CR Graph Placeholder</p>
-  </div>
 
   <div className="timeline-graph-box">
-    <p className="graph-placeholder-text">Timeline Graph Placeholder</p>
+  <RecentCRChart />
   </div>
 
   <div className="search-button-container">

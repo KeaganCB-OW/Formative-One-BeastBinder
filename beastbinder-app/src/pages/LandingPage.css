@@ -141,45 +141,17 @@ body {
 
 /* Timeline Graph Box */
 .timeline-graph-box {
-    width: 497px;
+    width: 1000px;
     height: 371px;
     background-color: rgba(78, 78, 78, 0.25); 
     border-radius: 11px;
     position: absolute;
     top: 13px;
     left: 13px; 
+    display: flex;
+    justify-content: center;
 }
 
-/* Encounter CR Graph Box */
-.encounter-cr-graph-box {
-    width: 497px;
-    height: 371px;
-    background-color: rgba(78, 78, 78, 0.25); 
-    border-radius: 11px;
-    position: absolute;
-    top: 13px; 
-    left: 13px; 
-}
-
-/* Timeline Graph Box */
-.timeline-graph-box {
-    width: 497px;
-    height: 371px;
-    background-color: rgba(78, 78, 78, 0.25); 
-    border-radius: 11px;
-    position: absolute;
-    top: 13px; 
-    left: calc(13px + 497px + 13px); 
-}
-
-/* Placeholder Text Styling */
-.graph-placeholder-text {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    line-height: 371px; 
-}
 /* Search Button Container */
 .search-button-container {
   position: absolute;
