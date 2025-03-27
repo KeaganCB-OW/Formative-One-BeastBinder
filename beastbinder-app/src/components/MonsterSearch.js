@@ -55,8 +55,36 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       setSelectedMonsterIndex(monster.index);
       setSelectedMonster(formattedMonster);
       onMonsterSelect(formattedMonster);
+
+      // Call the function to store the monster in local storage
+      storeMonsterInLocalStorage({
+        name: formattedMonster.name,
+        cr: formattedMonster.cr,
+        hp: formattedMonster.hp, // Include HP in the stored data
+      });
     } catch (error) {
       console.error("Error fetching monster details", error);
+    }
+  };
+
+  // Function to store the monster in local storage
+  const storeMonsterInLocalStorage = (monster) => {
+    const storedMonsters = JSON.parse(localStorage.getItem("recentMonsters")) || [];
+  
+    // Check if the monster already exists in the list
+    const isDuplicate = storedMonsters.some((storedMonster) => storedMonster.name === monster.name);
+  
+    if (!isDuplicate) {
+      // Add the new monster to the beginning of the array
+      const updatedMonsters = [monster, ...storedMonsters];
+  
+      // Ensure only the latest 5 monsters are stored
+      if (updatedMonsters.length > 5) {
+        updatedMonsters.pop();
+      }
+  
+      // Save the updated array back to local storage
+      localStorage.setItem("recentMonsters", JSON.stringify(updatedMonsters));
     }
   };
 
