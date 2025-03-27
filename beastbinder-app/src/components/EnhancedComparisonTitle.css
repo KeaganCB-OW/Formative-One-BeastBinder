@@ -1,7 +1,7 @@
 .enhanced-comparison-title-container {
     height: 78px;
     width: calc(100% - 144px); /* 72px from each edge */
-    background-color: rgba(255, 255, 255, 0.15);
+    background: rgba(78, 78, 78, 0.25);
     border-radius: 13px;
     display: flex;
     align-items: center;
