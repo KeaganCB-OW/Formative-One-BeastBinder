@@ -1,0 +1,106 @@
+/* Outer Search Box */
+.search-box-outer-right {
+    width: 782px;
+    height: 61px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Magnifying Glass Icon */
+.search-icon-right{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 26px; 
+}
+
+/* Inner Search Box */
+.search-box-inner-right {
+    width: 650px;
+    height: 42px;
+    background: rgba(78, 78, 78, 0.25);
+    border-radius: 11px;
+    position: absolute;
+    right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Search Input */
+.search-input-right{
+    width: calc(100% - 28px); 
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: white;
+    padding-left: 14px;
+    padding-right: 14px;
+    outline: none;
+}
+
+/* Search Results Container (Always Visible) */
+.search-results-container-right {
+    width: 782px;
+    height: 712px;
+    background: rgb(53, 53, 53);
+    border-radius: 11px;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Search Results Scrollable List */
+.search-results-right{
+    width: 100%;
+    max-height: calc(712px - 30px); /* Subtracts button space */
+    overflow-y: auto;
+    padding-top: 10px;
+}
+.search-result-right-entry {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    padding-left: 40px;
+    color: white;
+  }
+
+/* Monster Name */
+.monster-name-right{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 40px;
+}
+
+/* Empty Message */
+.empty-message-right{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    text-align: center;
+}
+

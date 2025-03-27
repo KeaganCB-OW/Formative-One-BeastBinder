@@ -12,6 +12,7 @@ import MonsterImmunities from "../components/MonsterImmunities";
 import MonsterHP from "../components/MonsterHP";
 import MonsterAC from "../components/MonsterAC";
 import AttributeRadarGraph from "../components/AttributeRadarGraph";
+import MonsterSearchRight from "../components/MonsterSearchRight";
 
 const EnhancedComparisonPage = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const EnhancedComparisonPage = () => {
       <EnhancedComparisonTitle />
       {/* Comparison Container */}
       <div className="enhanced-comparison-container">
+
         <div className="enhanced-monster-name-wrapper">
           <MonsterDisplayName monsterName={selectedMonster?.name} />
         </div>
@@ -57,9 +59,6 @@ const EnhancedComparisonPage = () => {
         <div className="enhanced-monster-ac-wrapper">
           <MonsterAC ac={selectedMonster?.ac} />
         </div>
-        <div className="enhanced-monster-name-wrapper-right">
-          <MonsterDisplayName /> {/* Right monster remains unchanged */}
-        </div>
         <div className="enhanced-monster-description-wrapper-right">
           <MonsterDescription /> {/* Right monster remains unchanged */}
         </div>
@@ -84,11 +83,15 @@ const EnhancedComparisonPage = () => {
         <div className="enhanced-monster-ac-wrapper-right">
           <MonsterAC /> {/* Right monster remains unchanged */}
         </div>
+
         <div className="comparison-graph-placeholder">
           <AttributeRadarGraph
             monsterLeft={selectedMonster}
             monsterRight={selectedMonsterRight}
           />
+        </div>
+        <div className="enhanced-monster-name-wrapper-right">
+        <MonsterSearchRight onRightMonsterSelect={(monster) => setSelectedMonsterRight(monster)} />
         </div>
       </div>
     </div>
