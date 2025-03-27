@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./MonsterSearch.css";
-import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 
 const MonsterSearch = ({ onMonsterSelect }) => {
   // State for search input and selected monster
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedMonster, setSelectedMonster] = useState(null);
-  const navigate = useNavigate(); // ✅ Initialize navigation hook
-
+  const navigate = useNavigate(); 
   // Hardcoded test monster list
   const allMonsters = [
     {
@@ -20,6 +19,14 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       vulnerability: "None",
       resistances: "None",
       immunities: "Charm",
+      attributes: {
+        strength: 10,
+        dexterity: 14,
+        constitution: 18,
+        intelligence: 17,
+        wisdom: 15,
+        charisma: 12,
+      },
     },
     {
       name: "Basilisk",
@@ -31,6 +38,14 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       vulnerability: "Cold",
       resistances: "Poison",
       immunities: "None",
+      attributes: {
+        strength: 16,
+        dexterity: 8,
+        constitution: 15,
+        intelligence: 2,
+        wisdom: 8,
+        charisma: 7,
+      },
     },
     {
       name: "Goblin",
@@ -42,6 +57,14 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       vulnerability: "None",
       resistances: "None",
       immunities: "None",
+      attributes: {
+        strength: 8,
+        dexterity: 14,
+        constitution: 10,
+        intelligence: 10,
+        wisdom: 8,
+        charisma: 8,
+      },
     },
     {
       name: "Fire Elemental",
@@ -53,6 +76,14 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       vulnerability: "Cold",
       resistances: "Fire",
       immunities: "Burn",
+      attributes: {
+        strength: 10,
+        dexterity: 17,
+        constitution: 16,
+        intelligence: 6,
+        wisdom: 10,
+        charisma: 7,
+      },
     },
     {
       name: "Lich",
@@ -64,8 +95,17 @@ const MonsterSearch = ({ onMonsterSelect }) => {
       vulnerability: "Radiant",
       resistances: "Necrotic",
       immunities: "Poison",
+      attributes: {
+        strength: 11,
+        dexterity: 16,
+        constitution: 16,
+        intelligence: 20,
+        wisdom: 14,
+        charisma: 16,
+      },
     },
   ];
+  
 
   // Dynamically filter monsters based on strict search input matching
   const filteredMonsters = searchTerm
@@ -90,10 +130,10 @@ const MonsterSearch = ({ onMonsterSelect }) => {
     }
   };
 
-  // ✅ Navigation Logic for Compare Button
   const handleCompare = () => {
     navigate("/enhanced-comparison");
   };
+  
 
   return (
     <div className="search-box-outer">
@@ -133,7 +173,7 @@ const MonsterSearch = ({ onMonsterSelect }) => {
           )}
         </div>
 
-        {/* ✅ Compare Button (Only visible if there are results) */}
+
         {filteredMonsters.length > 0 && (
           <button className="compare-button" onClick={handleCompare}>
             Compare

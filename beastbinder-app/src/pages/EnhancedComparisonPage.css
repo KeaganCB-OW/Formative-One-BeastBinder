@@ -1,57 +1,121 @@
-/* Enhanced Comparison Page - Base Styling */
-.enhanced-comparison-page {
-    background-color: #2B2B2B;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.enhanced-comparison-container {
+  width: 1584px;
+  height: 823px;
+  background-color: transparent;
+  border-radius: 11px;
+  position: absolute;
+  top: calc(92px + 43px + 78px + 37px); /* navbar + gap + breadcrumbs + 37px */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Title Container */
-.comparison-title-container {
-    width: 1318px;
-    height: 52px;
-    background-color: rgba(255, 0, 0, 0.2);
+.enhanced-monster-name-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .enhanced-monster-description-wrapper {
+    position: absolute;
+    top: 83px; /* MonsterDisplayName is 61px tall + 22px gap */
+    left: 0;
+  }
+  
+  .enhanced-monster-cr-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px); /* name + description height + gap */
+    left: 0;
+  }
+  .enhanced-monster-size-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px); /* Same as CR component */
+    left: calc(153px + 25px); /* 153px is MonsterCR width + 25px gap */
+  }
+  .enhanced-monster-vulnerability-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px + 53px + 13px); /* CR component height + spacing */
+    left: 0;
+  }
+  .enhanced-monster-resistances-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px);
+    left: 381px; /* Ensures the LEFT edge touches the container's LEFT edge */
+  }
+  .enhanced-monster-immunities-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px); 
+    left: 381px; /* Ensures the LEFT edge touches the container's LEFT edge */
+  }
+  .enhanced-monster-hp-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px); 
+    left: 0;
+  }
+  .enhanced-monster-ac-wrapper {
+    position: absolute;
+    top: calc(83px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px);
+    left: calc(153px + 17px); /* 153px = MonsterHP width */
+  }
+  .enhanced-monster-name-wrapper-right {
+    position: absolute;
+    top: 0px; /* Matches original name component top */
+    right: 0; /* Right edge touches right side of container */
+  }
+  .enhanced-monster-description-wrapper-right {
+    position: absolute;
+    top: calc(0px + 61px + 22px); /* 61px (name height) + 22px spacing */
+    right: 0; /* Aligns with right edge of container */
+  }
+  .enhanced-monster-cr-wrapper-right {
+    position: absolute;
+    top: calc(61px + 22px + 234px + 26px); /* name + spacing + description height + spacing */
+    right: 0;
+  }
+  .enhanced-monster-size-wrapper-right {
+    position: absolute;
+    top: calc(61px + 22px + 234px + 26px); /* same top as CR */
+    right: calc(153px + 25px); /* 153px CR width + 25px gap */
+  }
+  .enhanced-monster-vulnerabilities-wrapper-right {
+    position: absolute;
+    top: calc(61px + 22px + 234px + 26px + 53px + 13px); /* Name + gap + Description + gap + CR height + gap */
+    right: 0;
+  }
+  .enhanced-monster-resistances-wrapper-right {
+    position: absolute;
+    top: calc(
+      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px
+    ); /* stacked spacing below vulnerabilities */
+    right: 0;
+  }
+  .enhanced-monster-immunities-wrapper-right {
+    position: absolute;
+    top: calc(
+      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px
+    );
+    right: 0;
+  }
+  .enhanced-monster-hp-wrapper-right {
+    position: absolute;
+    top: calc(
+      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
+    );
+    right: 0;
+  }
+  .enhanced-monster-ac-wrapper-right {
+    position: absolute;
+    top: calc(
+      61px + 22px + 234px + 26px + 53px + 13px + 61px + 13px + 61px + 13px + 61px + 13px
+    ); /* Same as HP */
+    right: calc(153px + 17px); /* 153px HP width + 17px spacing */
+  }
+  .comparison-graph-placeholder {
+    width: 734px;
+    height: 481px;
+    background-color: rgba(78, 78, 78, 0.25); /* Semi-transparent placeholder */
     border-radius: 11px;
     position: absolute;
-    top: calc(92px + 43px + 78px + 19px);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Content Container */
-.comparison-content-container {
-    width: 1318px;
-    height: 791px;
-    background-color: rgba(0, 0, 255, 0.2);
-    border-radius: 11px;
-    position: absolute;
-    top: calc(92px + 43px + 78px + 19px + 52px);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Monster Sections */
-.monster-section {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-}
-
-/* Attribute Graph Placeholder */
-.attribute-graph-box {
-    width: 381px;
-    height: 465px;
-    background-color: rgba(78, 78, 78, 0.25);
-    border-radius: 11px;
-    position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -60,5 +124,13 @@
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
-    font-weight: 700;
-}
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

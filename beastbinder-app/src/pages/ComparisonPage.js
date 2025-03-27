@@ -11,6 +11,7 @@ import MonsterAC from "../components/MonsterAC";
 import MonsterVulnerabilities from "../components/MonsterVulnerabilities";
 import MonsterResistances from "../components/MonsterResistances";
 import MonsterImmunities from "../components/MonsterImmunities";
+import SingleAttributeRadarGraph from "../components/SingleAttributeRadarGraph";
 
 const ComparisonPage = () => {
   const [selectedMonster, setSelectedMonster] = useState({
@@ -55,7 +56,7 @@ const ComparisonPage = () => {
 
         {/* Attribute Graph Placeholder */}
         <div className="attribute-graph-wrapper">
-          <div className="attribute-graph-placeholder">Attribute Graph (Placeholder)</div>
+          <div className="attribute-graph-placeholder">  <SingleAttributeRadarGraph monster={selectedMonster} /></div>
         </div>
 
         {/* Monster Size Component */}

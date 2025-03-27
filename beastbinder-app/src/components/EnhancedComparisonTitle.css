@@ -1,0 +1,42 @@
+.enhanced-comparison-title-container {
+    height: 78px;
+    width: calc(100% - 144px); /* 72px from each edge */
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(92px + 43px); /* Same as breadcrumbs positioning */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .back-button {
+    width: 218px;
+    height: 42px;
+    border-radius: 11px;
+    background-color: #B15D5D;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    border: none;
+    position: absolute;
+    left: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .comparison-title-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  

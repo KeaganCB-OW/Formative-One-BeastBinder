@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./SearchMonstersButton.css"; 
 
+
 const SearchMonstersButton = () => {
   const navigate = useNavigate();
 
