@@ -21,23 +21,20 @@ ChartJS.register(
 );
 
 const SingleAttributeRadarGraph = ({ monster }) => {
-  const labels = [
-    "Strength",
-    "Dexterity",
-    "Constitution",
-    "Intelligence",
-    "Wisdom",
-    "Charisma",
-  ];
 
   const attributes = monster?.attributes || {
-    strength: 10,
-    dexterity: 10,
-    constitution: 10,
-    intelligence: 10,
-    wisdom: 10,
-    charisma: 10,
+    strength: 0,
+    dexterity: 0,
+    constitution: 0,
+    intelligence: 0,
+    wisdom: 0,
+    charisma: 0,
   };
+
+  const labels = Object.entries(attributes).map(
+    ([key, value]) => `${key} (${value})`
+  );
+  
 
   const data = {
     labels,
@@ -48,6 +45,8 @@ const SingleAttributeRadarGraph = ({ monster }) => {
         backgroundColor: "rgba(177, 93, 93, 0.2)",
         borderColor: "rgba(177, 93, 93, 1)",
         borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 5
       },
     ],
   };
@@ -57,9 +56,9 @@ const SingleAttributeRadarGraph = ({ monster }) => {
     scales: {
       r: {
         min: 0,
-        max: 20,
+        max: 30,
         ticks: {
-          stepSize: 5,
+          stepSize: 10,
           color: 'white',
           backdropColor: 'transparent',
           z: 10, // doesn't do much, but included for future-proofing
@@ -68,7 +67,7 @@ const SingleAttributeRadarGraph = ({ monster }) => {
         pointLabels: {
           color: 'white',
           font: {
-            size: 14
+            size: 12
           }
         },
         angleLines: {

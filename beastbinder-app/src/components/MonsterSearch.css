@@ -65,7 +65,7 @@
 /* Search Results Scrollable List */
 .search-results {
     width: 100%;
-    max-height: calc(712px - 70px); /* Subtracts button space */
+    max-height: calc(712px - 150px); /* Subtracts button space */
     overflow-y: auto;
     padding-top: 10px;
 }

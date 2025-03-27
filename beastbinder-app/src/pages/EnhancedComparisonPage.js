@@ -19,8 +19,8 @@ const EnhancedComparisonPage = () => {
   const [selectedMonsterRight, setSelectedMonsterRight] = useState(null); // RIGHT monster
 
   useEffect(() => {
-    if (location.state?.monster) {
-      setSelectedMonster(location.state.monster);
+    if (location.state?.selectedMonsterLeft) {
+      setSelectedMonster(location.state.selectedMonsterLeft);
     }
   }, [location.state]);
 
@@ -58,31 +58,31 @@ const EnhancedComparisonPage = () => {
           <MonsterAC ac={selectedMonster?.ac} />
         </div>
         <div className="enhanced-monster-name-wrapper-right">
-          <MonsterDisplayName /> {/*monsterName={selectedMonsterRight.name}*/}
+          <MonsterDisplayName /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-description-wrapper-right">
-          <MonsterDescription /> {/* description={selectedMonsterRight.description} */}
+          <MonsterDescription /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-cr-wrapper-right">
-          <MonsterCR /> {/* cr={selectedMonsterRight.cr} */}
+          <MonsterCR /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-size-wrapper-right">
-          <MonsterSize /> {/* size={selectedMonsterRight.size} */}
+          <MonsterSize /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-vulnerabilities-wrapper-right">
-          <MonsterVulnerabilities /> {/* vulnerability={selectedMonsterRight.vulnerability} */}
+          <MonsterVulnerabilities /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-resistances-wrapper-right">
-          <MonsterResistances /> {/* resistances={selectedMonsterRight.resistances} */}
+          <MonsterResistances /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-immunities-wrapper-right">
-          <MonsterImmunities /> {/* immunities={selectedMonsterRight.immunities} */}
+          <MonsterImmunities /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-hp-wrapper-right">
-          <MonsterHP /> {/* hp={selectedMonsterRight.hp} */}
+          <MonsterHP /> {/* Right monster remains unchanged */}
         </div>
         <div className="enhanced-monster-ac-wrapper-right">
-          <MonsterAC /> {/* ac={selectedMonsterRight.ac} */}
+          <MonsterAC /> {/* Right monster remains unchanged */}
         </div>
         <div className="comparison-graph-placeholder">
           <AttributeRadarGraph

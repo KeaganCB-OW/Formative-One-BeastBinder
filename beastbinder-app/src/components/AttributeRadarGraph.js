@@ -73,7 +73,7 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
     scales: {
       r: {
         min: 0,
-        max: 20,
+        max: 30,
         ticks: {
           stepSize: 5,
           color: 'white',
@@ -84,7 +84,7 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
         pointLabels: {
           color: 'white',
           font: {
-            size: 14
+            size: 12
           }
         },
         angleLines: {
