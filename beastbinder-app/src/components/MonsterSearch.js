@@ -132,10 +132,12 @@ const MonsterSearch = ({ onMonsterSelect }) => {
                 <span className="monster-name">{monster.name}</span>
                 <span className="cr-label">CR</span>
                 <div className="cr-box">
+                <div className="cr-box-text">
                   {selectedMonsterIndex === monster.index &&
                   selectedMonster?.cr
                     ? selectedMonster.cr
                     : "--"}
+                    </div>
                 </div>
               </div>
             ))}

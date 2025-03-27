@@ -114,6 +114,7 @@
 
 /* CR Box */
 .cr-box {
+    font-family: "Roboto";
     width: 70px;
     height: 43px;
     border-radius: 11px;
@@ -123,6 +124,10 @@
     justify-content: center;
     position: absolute;
     right: 13px;
+}
+.cr-box-text{
+    font-family: "Roboto";
+    font-size: 20px;
 }
 
 /* Empty Message */
