@@ -58,27 +58,37 @@ const SingleAttributeRadarGraph = ({ monster }) => {
       r: {
         min: 0,
         max: 20,
-        ticks: { stepSize: 5 },
-        pointLabels: {
-          font: {
-            size: 14,
-            family: "Roboto",
-          },
+        ticks: {
+          stepSize: 5,
+          color: 'white',
+          backdropColor: 'transparent',
+          z: 10, // doesn't do much, but included for future-proofing
+          display: true
         },
-      },
+        pointLabels: {
+          color: 'white',
+          font: {
+            size: 14
+          }
+        },
+        angleLines: {
+          color: 'rgba(255, 255, 255, 0.15)'
+        },
+        grid: {
+          color: 'rgba(255, 255, 255, 0.15)',
+          z: 0 // grid appears behind
+        }
+      }
     },
     plugins: {
       legend: {
         labels: {
-          font: {
-            family: "Roboto",
-            size: 16,
-          },
-          color: "#fff",
-        },
-      },
-    },
+          color: 'white'
+        }
+      }
+    }
   };
+  
 
   return (
     <div className="single-attribute-radar-graph-wrapper">

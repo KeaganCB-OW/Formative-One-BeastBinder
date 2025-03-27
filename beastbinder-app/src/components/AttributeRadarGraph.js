@@ -21,25 +21,6 @@ ChartJS.register(
 );
 
 const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
-  // Placeholder attributes
-  const placeholderAttributesLeft = {
-    strength: 16,
-    dexterity: 12,
-    constitution: 14,
-    intelligence: 10,
-    wisdom: 13,
-    charisma: 8,
-  };
-
-  const placeholderAttributesRight = {
-    strength: 12,
-    dexterity: 16,
-    constitution: 10,
-    intelligence: 15,
-    wisdom: 11,
-    charisma: 14,
-  };
-
   const labels = [
     "Strength",
     "Dexterity",
@@ -49,19 +30,37 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
     "Charisma",
   ];
 
+  const leftAttributes = monsterLeft?.attributes || {
+    strength: 10,
+    dexterity: 10,
+    constitution: 10,
+    intelligence: 10,
+    wisdom: 10,
+    charisma: 10,
+  };
+
+  const rightAttributes = monsterRight?.attributes || {
+    strength: 10,
+    dexterity: 10,
+    constitution: 10,
+    intelligence: 10,
+    wisdom: 10,
+    charisma: 10,
+  };
+
   const data = {
     labels,
     datasets: [
       {
         label: monsterLeft?.name || "Monster Left",
-        data: Object.values(placeholderAttributesLeft),
+        data: Object.values(leftAttributes),
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 2,
       },
       {
         label: monsterRight?.name || "Monster Right",
-        data: Object.values(placeholderAttributesRight),
+        data: Object.values(rightAttributes),
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 2,
@@ -75,27 +74,38 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
       r: {
         min: 0,
         max: 20,
-        ticks: { stepSize: 5 },
-        pointLabels: {
-          font: {
-            size: 14,
-            family: "Roboto",
-          },
+        ticks: {
+          stepSize: 5,
+          color: 'white',
+          backdropColor: 'transparent',
+          z: 10, // doesn't do much, but included for future-proofing
+          display: true
         },
-      },
+        pointLabels: {
+          color: 'white',
+          font: {
+            size: 14
+          }
+        },
+        angleLines: {
+          color: 'rgba(255, 255, 255, 0.15)'
+        },
+        grid: {
+          color: 'rgba(255, 255, 255, 0.15)',
+          z: 0 // grid appears behind
+        }
+      }
     },
     plugins: {
       legend: {
         labels: {
-          font: {
-            family: "Roboto",
-            size: 16,
-          },
-          color: "#fff",
-        },
-      },
-    },
+          color: 'white'
+        }
+      }
+    }
   };
+  
+  
 
   return (
     <div className="attribute-radar-graph-wrapper">

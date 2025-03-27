@@ -131,7 +131,9 @@ const MonsterSearch = ({ onMonsterSelect }) => {
   };
 
   const handleCompare = () => {
-    navigate("/enhanced-comparison");
+    if (selectedMonster !== null) {
+      navigate("/enhanced-comparison", { state: { monster: filteredMonsters[selectedMonster] } });
+    }
   };
   
 
