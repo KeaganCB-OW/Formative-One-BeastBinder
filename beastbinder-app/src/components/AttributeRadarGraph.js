@@ -57,6 +57,8 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 10
       },
       {
         label: monsterRight?.name || "Monster Right",
@@ -64,6 +66,9 @@ const AttributeRadarGraph = ({ monsterLeft, monsterRight }) => {
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 10
+        
       },
     ],
   };

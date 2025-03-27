@@ -23,12 +23,12 @@ ChartJS.register(
 const SingleAttributeRadarGraph = ({ monster }) => {
 
   const attributes = monster?.attributes || {
-    strength: 0,
-    dexterity: 0,
-    constitution: 0,
-    intelligence: 0,
-    wisdom: 0,
-    charisma: 0,
+    Strength: 0,
+    Dexterity: 0,
+    Constitution: 0,
+    Intelligence: 0,
+    Wisdom: 0,
+    Charisma: 0,
   };
 
   const labels = Object.entries(attributes).map(
