@@ -1,0 +1,101 @@
+Date : 2025-03-28 11:55:59
+Directory : c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app
+Total : 63 files,  20324 codes, 141 comments, 422 blanks, all 20887 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          3 |     17,704 |          0 |          3 |     17,707 |
+| JavaScript |         29 |      1,332 |         25 |        217 |      1,574 |
+| CSS        |         23 |      1,212 |        106 |        162 |      1,480 |
+| Markdown   |          1 |         38 |          0 |         33 |         71 |
+| XML        |          6 |         25 |          0 |          6 |         31 |
+| HTML       |          1 |         13 |         10 |          1 |         24 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                     |         63 |     20,324 |        141 |        422 |     20,887 |
+| . (Files)                                                                                                             |          3 |     17,717 |          0 |         35 |     17,752 |
+| public                                                                                                                |          8 |         63 |         10 |          8 |         81 |
+| public (Files)                                                                                                        |          2 |         38 |         10 |          2 |         50 |
+| public\assets                                                                                                         |          6 |         25 |          0 |          6 |         31 |
+| src                                                                                                                   |         52 |      2,544 |        131 |        379 |      3,054 |
+| src (Files)                                                                                                           |          6 |         91 |          7 |         18 |        116 |
+| src\components                                                                                                        |         37 |      1,749 |         93 |        250 |      2,092 |
+| src\pages                                                                                                             |          8 |        684 |         31 |        107 |        822 |
+| src\utils                                                                                                             |          1 |         20 |          0 |          4 |         24 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                              | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\README.md                                    | Markdown   |         38 |          0 |         33 |         71 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\package-lock.json                            | JSON       |     17,637 |          0 |          1 |     17,638 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\package.json                                 | JSON       |         42 |          0 |          1 |         43 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\chevron-bright.svg             | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\chevron-dimmed.svg             | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\comparison-icon.svg            | XML        |         10 |          0 |          1 |         11 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\landing-icon.svg               | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\magnifying-glass.svg           | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\assets\timeline-icon.svg              | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\index.html                            | HTML       |         13 |         10 |          1 |         24 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\public\manifest.json                         | JSON       |         25 |          0 |          1 |         26 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\App.css                                  | CSS        |         33 |          0 |          6 |         39 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\App.js                                   | JavaScript |         21 |          0 |          4 |         25 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\AttributeRadarGraph.css       | CSS        |          7 |          0 |          2 |          9 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\AttributeRadarGraph.js        | JavaScript |        111 |          0 |         12 |        123 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\Breadcrumbs.css               | CSS        |         33 |          4 |          6 |         43 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\Breadcrumbs.js                | JavaScript |         32 |          2 |          8 |         42 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\EnhancedComparisonTitle.css   | CSS        |         39 |          0 |          3 |         42 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\EnhancedComparisonTitle.js    | JavaScript |         18 |          0 |          5 |         23 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\HpComparisonPieChart.js       | JavaScript |         39 |          1 |          7 |         47 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterAC.css                 | CSS        |         42 |          5 |          5 |         52 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterAC.js                  | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterCR.css                 | CSS        |         42 |          5 |          5 |         52 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterCR.js                  | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterDescription.css        | CSS        |         52 |          5 |          8 |         65 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterDescription.js         | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterDisplayName.css        | CSS        |         44 |          5 |          5 |         54 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterDisplayName.js         | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterHP.css                 | CSS        |         42 |          5 |          5 |         52 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterHP.js                  | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterImmunities.css         | CSS        |         41 |          5 |          5 |         51 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterImmunities.js          | JavaScript |         40 |          1 |          5 |         46 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterResistances.css        | CSS        |         41 |          5 |          5 |         51 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterResistances.js         | JavaScript |         34 |          0 |          6 |         40 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSearch.css             | CSS        |        133 |         13 |         13 |        159 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSearch.js              | JavaScript |        153 |          9 |         25 |        187 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSearchRight.css        | CSS        |         90 |          8 |         10 |        108 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSearchRight.js         | JavaScript |        112 |          2 |         17 |        131 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSize.css               | CSS        |         42 |          5 |          6 |         53 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterSize.js                | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterStatsBarChart.js       | JavaScript |         98 |          0 |         13 |        111 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterVulnerabilities.css    | CSS        |         41 |          5 |          5 |         51 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\MonsterVulnerabilities.js     | JavaScript |         38 |          0 |          6 |         44 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\Navbar.css                    | CSS        |         35 |          3 |          6 |         44 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\Navbar.js                     | JavaScript |         45 |          0 |          7 |         52 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\RecentCRChart.js              | JavaScript |         73 |          3 |          7 |         83 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\SearchMonstersButton.css      | CSS        |         22 |          2 |          2 |         26 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\SearchMonstersButton.js       | JavaScript |         12 |          0 |          5 |         17 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\SingleAttributeRadarGraph.css | CSS        |          7 |          0 |          1 |          8 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\components\SingleAttributeRadarGraph.js  | JavaScript |         89 |          0 |         11 |        100 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\index.css                                | CSS        |         12 |          0 |          2 |         14 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\index.js                                 | JavaScript |         12 |          3 |          3 |         18 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\ComparisonPage.css                 | CSS        |         99 |         15 |         16 |        130 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\ComparisonPage.js                  | JavaScript |         86 |          0 |         17 |        103 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\EnhancedComparisonPage.css         | CSS        |        165 |          0 |         17 |        182 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\EnhancedComparisonPage.js          | JavaScript |        120 |          0 |         14 |        134 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\LandingPage.css                    | CSS        |        128 |         14 |         25 |        167 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\LandingPage.js                     | JavaScript |         47 |          0 |         11 |         58 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\TimelinePage.css                   | CSS        |         22 |          2 |          4 |         28 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\pages\TimelinePage.js                    | JavaScript |         17 |          0 |          3 |         20 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\reportWebVitals.js                       | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\setupTests.js                            | JavaScript |          1 |          4 |          1 |          6 |
+| c:\Users\User\Documents\GitHub\Formative-One-BeastBinder\beastbinder-app\src\utils\api.js                             | JavaScript |         20 |          0 |          4 |         24 |
+| Total                                                                                                                 |            |     20,324 |        141 |        422 |     20,887 |
++-----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
