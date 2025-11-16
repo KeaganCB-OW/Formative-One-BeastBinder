@@ -18,7 +18,12 @@
 
 ---
 
-## 2.1 Project Header
+
+<p align="center">
+  <img src="./documentation/mockups/BeastBinder-project-header.png" alt="Project Header" width="100%">
+</p>
+
+## Project Header
 
 ### Project title block
 
@@ -29,18 +34,18 @@
 
 ### Table of contents
 
-1. [2.1 Project Header](#21-project-header)  
-2. [2.2 About The Project](#22-about-the-project)  
-3. [2.3 Getting Started](#23-getting-started)  
-4. [2.4 Project Features](#24-project-features)  
-5. [2.4 Development Process](#24-development-process)  
-6. [2.5 Final Outcome](#25-final-outcome)  
-7. [2.6 Conclusion](#26-conclusion)  
-8. [2.7 Footer](#27-footer)
+1. [Project Header](#project-header)  
+2. [About The Project](#about-the-project)  
+3. [Getting Started](#getting-started)  
+4. [Project Features](#project-features)  
+5. [Development Process](#development-process)  
+6. [Final Outcome](#final-outcome)  
+7. [Conclusion](#conclusion)  
+8. [Footer](#footer)
 
 ---
 
-## 2.2 About The Project
+## About The Project
 
 ### Short project description
 
@@ -77,7 +82,7 @@ The core goal is to reduce rulebook flipping and tab chaos, letting users focus 
 
 ---
 
-## 2.3 Getting Started
+## Getting Started
 
 All repositories require installation instructions. This section explains how to clone and run the project locally for development and testing.
 
@@ -124,7 +129,7 @@ BeastBinder consumes the public **D&D 5e API**, so no backend or database setup 
 
 ---
 
-## 2.4 Project Features
+## Project Features
 
 ### Main features and functionality
 
@@ -162,7 +167,7 @@ BeastBinder consumes the public **D&D 5e API**, so no backend or database setup 
 - Responsive layout allows use on laptop screens as well as smaller displays.
 
 
-## 2.4 Development Process
+## Development Process
 
 This section documents the design and technical decisions made while building BeastBinder.
 
@@ -208,7 +213,7 @@ Example placeholder:
 - [BeastBinder walkthrough – demo video](https://drive.google.com/file/d/1FQRfC_PAkw0EzYWjQs9ADd-vB8PJPNJr/view?usp=sharing)
 
 
-## 2.6 Conclusion
+## Conclusion
 
 BeastBinder explores how a focused utility app can support tabletop roleplaying by turning raw D&D 5e monster data into an interactive, visual experience. The project demonstrates how to combine **API integration**, **data visualisation**, and **component-based UI design** to make complex information more accessible for players and Dungeon Masters.
 
@@ -222,7 +227,7 @@ Future iterations could introduce features like encounter building, exportable s
 
 ---
 
-## 2.7 Footer
+## Footer
 
 ### License
 
@@ -240,4 +245,4 @@ See the `LICENSE` file in this repository for the full license text and usage te
 
 - The creators and maintainers of the **D&D 5e API**.  
 - The wider D&D community for inspiring the concept and use cases.  
-- Lecturers and peers who provided feedback during the formative project review.
+- Lecturers and peers who provided feedback during the formative project review, especially Tsungai who was a constat help with its production.
